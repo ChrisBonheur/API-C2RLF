@@ -1,9 +1,12 @@
 from django.urls import path
+from rest_framework.authtoken.views import obtain_auth_token
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from . views import UserAPIView, AuthorAPIView
+from . views import AuthorAPIView
 
 urlpatterns = [
-    path('', UserAPIView.as_view()),
-    path('author', AuthorAPIView.as_view()),
-    path('author/<int:id_user>', AuthorAPIView.as_view()),
+    path('', AuthorAPIView.as_view(), name='author'),
+    path('<int:id_user>', AuthorAPIView.as_view(), name='author_one'),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
