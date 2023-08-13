@@ -96,7 +96,7 @@ class TestAuthor(APITestCase):
         #raise 401 login but not superuser
         self.client.force_authenticate(self.user)
         req = self.client.get(reverse_lazy('author'))
-        self.assertEqual(req.status_code, status.HTTP_401_UNAUTHORIZED)
+        self.assertEqual(req.status_code, status.HTTP_403_FORBIDDEN)
 
         super_user = User.objects.create_superuser(username='chris', email='chris@gmail.com', password='1234')
         #test get all users by superuser

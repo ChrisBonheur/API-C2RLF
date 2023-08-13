@@ -18,27 +18,24 @@ class AuthorAPIView(APIView):
 
     def get(self, request, id_user: int = 0):
         self.permission_classes = [IsAuthenticated]
-        if(request.user.is_authenticated):
-            if(request.GET.get('user_id')):
-                #user authenticate can only get his own data of user
-                userSerializer = UserSerializer(request.user)
-                return Response(userSerializer.data, status=status.HTTP_200_OK)
-            else:
+        self.check_permissions(request)
+        if(request.GET.get('user_id')):
+            #user authenticate can only get his own data of user
+            userSerializer = UserSerializer(request.user)
+            return Response(userSerializer.data, status=status.HTTP_200_OK)
+        else:
                 #only admin get get user by that way many or one
                 self.permission_classes = [IsAdminUser]
-                if(request.user.is_superuser):
-                    if(id_user):
-                        user = get_object_or_404(User, pk=id_user)
-                        userSerializer = UserSerializer(user)
-                        return Response(userSerializer.data, status=status.HTTP_200_OK)
-                    else:
-                        users = User.objects.filter(is_active=True)
-                        userSerializer = UserListSerializer(users, many=True)
-                        return Response(userSerializer.data, status=status.HTTP_200_OK)
+                self.check_permissions(request)
+                if(id_user):
+                    user = get_object_or_404(User, pk=id_user)
+                    userSerializer = UserSerializer(user)
+                    return Response(userSerializer.data, status=status.HTTP_200_OK)
+                else:
+                    users = User.objects.filter(is_active=True)
+                    userSerializer = UserListSerializer(users, many=True)
+                    return Response(userSerializer.data, status=status.HTTP_200_OK)
                     
-                return Response({"message": "Vous n'êtes pas autorisé !"}, status=status.HTTP_401_UNAUTHORIZED)
-        else:
-            return Response({"message": "Vous n'êtes pas connecté !"}, status=status.HTTP_401_UNAUTHORIZED)
 
     def post(self, request):
         authorSerializer = UserAuthorSerializer(data=request.data)
