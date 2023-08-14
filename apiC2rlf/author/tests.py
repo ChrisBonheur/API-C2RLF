@@ -45,7 +45,7 @@ class TestAuthor(APITestCase):
             "password": "1234",
             "adress": '102 rue de test2',
             "contact": '0683144332',
-            "institution": 'dev2',
+            "institution": 'institution',
             "aboutAuthor": 'me and me2',
         }
         response = self.client.put(reverse_lazy(viewname='author_one', args=[user['id'],]), data=author_data, format='json')
@@ -88,6 +88,23 @@ class TestAuthor(APITestCase):
         self.assertEqual(self.user.username, req_to_json['username'])
         #test raise error if user not logi
         #self.assertRaises
+
+    def test_conflict_email(self):
+        data = {
+            'username': 'bonheur',
+            'email': self.user.email,
+            'password': '1234',
+            "contact": '0683144332',
+            "first_name": "bonheur2",
+            "adress": '102 rue de test2',
+            "contact": '0683144332',
+            "institution": 'institution',
+            "aboutAuthor": 'me and me2',
+        }
+
+        response = self.client.post(reverse_lazy('author'), data=data)
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST);
 
     def test_get_users_by_super_user(self):
         #raise 401 if no login

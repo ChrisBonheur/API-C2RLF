@@ -10,13 +10,18 @@ class UserAuthorSerializer(Serializer):
     username = serializers.CharField(max_length=50)
     last_name = serializers.CharField(max_length=50)
     first_name = serializers.CharField(max_length=50)
-    adress = serializers.CharField(max_length=100, required=False)
+    adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)
     contact = serializers.CharField(max_length=25, required=False)
-    institution = serializers.CharField(max_length=100)
-    aboutAuthor = serializers.CharField(max_length=255, required=False)
+    institution = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)
+    aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)
     email = serializers.EmailField()
     password = serializers.CharField()
-    photo = serializers.FileField(required=False)
+    photo = serializers.FileField(required=False, allow_null=True)
+
+    def validate_email(self, value):
+        if User.objects.filter(email=value).exists():
+            raise serializers.ValidationError("Cet e-mail est déjà utilisé.")
+        return value
 
     def create(self, validated_data):
         photo = validated_data['photo'] if validated_data.get('photo') else ""

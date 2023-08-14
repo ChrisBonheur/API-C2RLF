@@ -8,6 +8,7 @@ from django.http import JsonResponse
 import json
 from django.db.utils import IntegrityError
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from drf_yasg.utils import swagger_auto_schema
 
 from .serializers import UserSerializer, UserAuthorSerializer, UserListSerializer
 from .models import Author
@@ -16,7 +17,16 @@ from django.core.exceptions import PermissionDenied
 class AuthorAPIView(APIView):
     permission_classes = []
 
+    @swagger_auto_schema(
+        responses={200: UserSerializer}
+    )
     def get(self, request, id_user: int = 0):
+        """Get one user or more
+        Args:
+            id_user (int, optional): if id_user is past we get specific user.
+        Returns:
+            UserSerializer: list or single
+        """
         self.permission_classes = [IsAuthenticated]
         self.check_permissions(request)
         if(request.GET.get('user_id')):
