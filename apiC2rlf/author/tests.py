@@ -1,9 +1,11 @@
 from django.urls import reverse_lazy, reverse
 from rest_framework import status
+from django.shortcuts import get_object_or_404
 from rest_framework.test import APITestCase, APIRequestFactory, force_authenticate
 from django.contrib.auth.models import User
 from django.core.files.uploadedfile import SimpleUploadedFile
 from .views import AuthorAPIView
+from .base64_for_test import base64_file
 import json
 
 from author.models import Author
@@ -13,8 +15,14 @@ class TestAuthor(APITestCase):
     def setUp(self) -> None:
         self.factory = APIRequestFactory()
         self.user = User.objects.create_user(email='bonheur@gmail.com', password='1234', username='bonheur')
+        self.author = Author.objects.create(
+            adress='102 rue de test',
+            contact='068314433',
+            institution='dev',
+            aboutAuthor='me and me',
+            user=self.user
+        )
         self.author_data = {
-            "username": "Bonheurs",
             "last_name": "mafoundou",
             "first_name": "bonheur",
             "email": "bonheuar@gmail.com",
@@ -34,11 +42,10 @@ class TestAuthor(APITestCase):
 
         user = json.loads(response.content.decode('utf-8'))
         self.assertEqual(user['author']['aboutAuthor'], self.author_data['aboutAuthor'])
-        self.assertEqual(user['username'], self.author_data['username'])
+        self.assertEqual(user['username'], self.author_data['email'])
         #update 
         photo_file = SimpleUploadedFile("../test_photo.jpg", b"file_content", content_type="image/jpeg")
         author_data = {
-            "username": "Bonheurs2",
             "last_name": "mafoundou2",
             "first_name": "bonheur2",
             "email": "bonheuar@gmail.com2",
@@ -47,14 +54,15 @@ class TestAuthor(APITestCase):
             "contact": '0683144332',
             "institution": 'institution',
             "aboutAuthor": 'me and me2',
+            "photo": base64_file
         }
-        response = self.client.put(reverse_lazy(viewname='author_one', args=[user['id'],]), data=author_data, format='json')
-
+        self.client.force_authenticate(user=self.user)
+        response = self.client.put(reverse_lazy(viewname='author_one', args=[self.user.id,]), data=author_data, format='json')
         self.assertEqual(response.status_code, 201)
 
         user = json.loads(response.content.decode('utf-8'))
         self.assertEqual(user['author']['aboutAuthor'], author_data['aboutAuthor'])
-        self.assertEqual(user['username'], author_data['username'])
+        self.assertEqual(user['username'], author_data['email'])
         self.assertEqual(user['last_name'], author_data['last_name'])
         self.assertEqual(user['first_name'], author_data['first_name'])
         self.assertEqual(user['email'], author_data['email'])
@@ -100,6 +108,7 @@ class TestAuthor(APITestCase):
             "contact": '0683144332',
             "institution": 'institution',
             "aboutAuthor": 'me and me2',
+            "last_name": "mafoundou"
         }
 
         response = self.client.post(reverse_lazy('author'), data=data)

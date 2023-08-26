@@ -1,13 +1,15 @@
+import base64
 from rest_framework.serializers import ModelSerializer, Serializer
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
+from django.core.files.base import ContentFile
 
 from .models import Author
 
 
 class UserAuthorSerializer(Serializer):
-    username = serializers.CharField(max_length=50)
+    username = serializers.CharField(max_length=50, required=False, allow_null=True, allow_blank=True)
     last_name = serializers.CharField(max_length=50)
     first_name = serializers.CharField(max_length=50)
     adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)
@@ -16,17 +18,14 @@ class UserAuthorSerializer(Serializer):
     aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)
     email = serializers.EmailField()
     password = serializers.CharField()
-    photo = serializers.FileField(required=False, allow_null=True)
-
-    def validate_email(self, value):
-        if User.objects.filter(email=value).exists():
-            raise serializers.ValidationError("Cet e-mail est déjà utilisé.")
-        return value
+    photo = serializers.CharField(required=False, allow_null=True, write_only=False)
 
     def create(self, validated_data):
+        if User.objects.filter(email=validated_data['email']).exists():
+            raise serializers.ValidationError("Cet e-mail est déjà utilisé.")
         photo = validated_data['photo'] if validated_data.get('photo') else ""
         user = User.objects.create_user(
-            username=validated_data['username'],
+            username=validated_data['email'],
             email=validated_data['email'],
             password=validated_data['password'],
             last_name=validated_data['last_name'],
@@ -38,17 +37,15 @@ class UserAuthorSerializer(Serializer):
             adress=validated_data['adress'],
             contact=validated_data['contact'],
             institution=validated_data['institution'],
-            aboutAuthor=validated_data['aboutAuthor'],
-            photo=photo
+            aboutAuthor=validated_data['aboutAuthor']
         )
 
         return user, author
     
     def update(self, validated_data, pk: int):
         user = get_object_or_404(User, pk=pk)
-        user.username=validated_data['username']
+        user.username=validated_data['email']
         user.email=validated_data['email']
-        user.password=validated_data['password']
         user.last_name=validated_data['last_name']
         user.first_name=validated_data['first_name']
 
@@ -58,12 +55,19 @@ class UserAuthorSerializer(Serializer):
         author.institution=validated_data['institution']
         author.adress=validated_data['adress']
         author.aboutAuthor=validated_data['aboutAuthor']
-        if validated_data.get('photo'):
-            author.photo = validated_data.get('photo')
 
+        print(validated_data.get('photo'))
+        
+        if validated_data.get('photo'):
+            format, img_str = validated_data['photo'].split(';base64,')
+            extension = format.split('/')[-1]
+            print('saving file')
+            author.photo.save(f'{user.last_name}_{user.id}.{extension}', ContentFile(base64.b64decode(img_str)))
+        
         user.save()
         author.save()
 
+        #import pdb;pdb.set_trace();
         return user, author
 
 class AuthorSerializer(ModelSerializer):

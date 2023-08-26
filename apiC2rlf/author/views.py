@@ -2,6 +2,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.exceptions import PermissionDenied
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
@@ -34,19 +35,21 @@ class AuthorAPIView(APIView):
             userSerializer = UserSerializer(request.user)
             return Response(userSerializer.data, status=status.HTTP_200_OK)
         else:
-                #only admin get get user by that way many or one
-                self.permission_classes = [IsAdminUser]
-                self.check_permissions(request)
-                if(id_user):
-                    user = get_object_or_404(User, pk=id_user)
-                    userSerializer = UserSerializer(user)
-                    return Response(userSerializer.data, status=status.HTTP_200_OK)
-                else:
-                    users = User.objects.filter(is_active=True)
-                    userSerializer = UserListSerializer(users, many=True)
-                    return Response(userSerializer.data, status=status.HTTP_200_OK)
+            #only admin get get user by that way many or one
+            self.permission_classes = [IsAdminUser]
+            self.check_permissions(request)
+            if(id_user):
+                user = get_object_or_404(User, pk=id_user)
+                userSerializer = UserSerializer(user)
+                return Response(userSerializer.data, status=status.HTTP_200_OK)
+            else:
+                users = User.objects.filter(is_active=True)
+                userSerializer = UserListSerializer(users, many=True)
+                return Response(userSerializer.data, status=status.HTTP_200_OK)
                     
-
+    @swagger_auto_schema(
+        responses={200: UserSerializer}
+    )
     def post(self, request):
         authorSerializer = UserAuthorSerializer(data=request.data)
 
@@ -57,14 +60,21 @@ class AuthorAPIView(APIView):
         print(authorSerializer.errors)
         return Response(authorSerializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+    @swagger_auto_schema(
+        responses={200: UserSerializer}
+    )
     def put(self, request, id_user: int):
         authorSerializer = UserAuthorSerializer(data=request.data)
-
+        self.permission_classes = [IsAuthenticated]
+        self.check_permissions(request)
+        if(not request.user.is_superuser and request.user.id != id_user):
+            raise PermissionDenied("Vous n'avez pas les autorisation nécessaire pour modifier cet utilisateur.")
         if authorSerializer.is_valid():
             user, author = authorSerializer.update(authorSerializer.data, id_user)
             userSerializer = UserSerializer(user)
             return Response(userSerializer.data, status=status.HTTP_201_CREATED)
         print(authorSerializer.errors)
+
         return Response(authorSerializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 """
