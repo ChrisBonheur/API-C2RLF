@@ -18,7 +18,7 @@ class UserAuthorSerializer(Serializer):
     aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)
     email = serializers.EmailField()
     password = serializers.CharField()
-    photo = serializers.CharField(required=False, allow_null=True, write_only=False)
+    photo = serializers.CharField(required=False, allow_null=True, allow_blank=True, write_only=False)
 
     def create(self, validated_data):
         if User.objects.filter(email=validated_data['email']).exists():
@@ -49,20 +49,21 @@ class UserAuthorSerializer(Serializer):
         user.last_name=validated_data['last_name']
         user.first_name=validated_data['first_name']
 
-        author = get_object_or_404(Author, user=user)
-        author.adress=validated_data['adress']
+        author = Author.objects.get_or_create(user=user)[0]
+
+        author.adress= validated_data['adress']
         author.contact=validated_data['contact']
         author.institution=validated_data['institution']
         author.adress=validated_data['adress']
         author.aboutAuthor=validated_data['aboutAuthor']
-
-        print(validated_data.get('photo'))
         
         if validated_data.get('photo'):
-            format, img_str = validated_data['photo'].split(';base64,')
-            extension = format.split('/')[-1]
-            print('saving file')
-            author.photo.save(f'{user.last_name}_{user.id}.{extension}', ContentFile(base64.b64decode(img_str)))
+            try:
+                format, img_str = validated_data['photo'].split(';base64,')
+                extension = format.split('/')[-1]
+                author.photo.save(f'{user.last_name}_{user.id}.{extension}', ContentFile(base64.b64decode(img_str)))
+            except ValueError as e:
+                pass
         
         user.save()
         author.save()
