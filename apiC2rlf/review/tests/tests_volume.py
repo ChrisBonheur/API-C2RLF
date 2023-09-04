@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from rest_framework import status
 import json
 from  review.models import Volume
+from apiC2rlf.settings import BASE_URI_API_FOR_TEST
 
 class TestVolume(APITestCase):
     URI = reverse_lazy('volume-list')
@@ -41,7 +42,7 @@ class TestVolume(APITestCase):
         self.volume['number'] = 2
         self.volume['volume_year'] = 2023
         self.client.force_authenticate(user=self.superuser)
-        response = self.client.put(f'http://localhost:8000/api-volume/volume/{volume.id}/', data=self.volume)
+        response = self.client.put(f'{BASE_URI_API_FOR_TEST}api/volume/{volume.id}/', data=self.volume)
         jsonFormat = json.loads(response.content.decode('utf-8'))
         self.assertEqual(jsonFormat['pages_number'], self.volume['pages_number'])
         self.assertEqual(jsonFormat['number'], self.volume['number'])
@@ -55,7 +56,7 @@ class TestVolume(APITestCase):
         }
         volume = Volume.objects.create(**volume)
         self.client.force_authenticate(self.user)
-        response = self.client.put(f'http://localhost:8000/api-volume/volume/{volume.id}/', data=self.volume)
+        response = self.client.put(f'{BASE_URI_API_FOR_TEST}api/volume/{volume.id}/', data=self.volume)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
         self.client.force_authenticate(self.superuser)
 
@@ -70,8 +71,7 @@ class TestVolume(APITestCase):
         count_after = Volume.objects.count()
         self.client.force_authenticate(self.superuser)
 
-        response = self.client.delete(f'http://localhost:8000/api-volume/volume/{volume.id}/')
+        response = self.client.delete(f'{BASE_URI_API_FOR_TEST}api/volume/{volume.id}/')
         self.assertEqual(response.status_code, 204)
         self.assertEqual(count_before, count_after - 1)
-        
         

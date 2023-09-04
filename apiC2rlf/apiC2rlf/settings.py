@@ -174,3 +174,6 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
+
+
+BASE_URI_API_FOR_TEST = "http://localhost:8000/"
