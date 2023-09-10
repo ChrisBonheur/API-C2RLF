@@ -3,11 +3,15 @@ from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 from django.core.files.base import ContentFile
 from datetime import datetime
+from django.contrib.auth.models import User
 import base64
 import uuid
 
-from .models import Volume, Numero, Sommaire
+from rest_framework.fields import empty
+
+from .models import Volume, Numero, Sommaire, TypeSource
 from apiC2rlf.enum import RequestMethod
+from author.serializers import ListUserAuthorSerializer, UserAuthorSerializer
 
 class Base64ToFieleField(serializers.FileField):
 
@@ -78,14 +82,25 @@ class NumeroSerializer(serializers.ModelSerializer):
         request = self.context['request']
         number = Numero.objects.filter(number=data['number'], volume=data['volume'])
         volume = data['volume']
-        if (number.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and number[0].id != int(request.data['id'])):
-            raise serializers.ValidationError(f"Ce nombre de numéro existe déjà pour le volume sélectioné ({volume.volume_year} n॰{volume.number}).")
+        if (number.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and number.exists() and number[0].id != int(request.data['id'])):
+            raise serializers.ValidationError(f"Ce nombre de numéro existe déjà pour le volume ({volume.volume_year} n॰{volume.number}).")
 
         return super().validate(data)
+    
+class NumeroSerializerList(serializers.ModelSerializer):
+    class Meta:
+        model = Numero
+        fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['volume_label'] = f"Vol n॰{instance.volume.number} {instance.volume.volume_year}"
+        return data
     
 class SommaireSerializer(serializers.ModelSerializer):
     pdf_file = Base64ToFieleField()
     picture = Base64ToFieleField(required=False, allow_null=True)
+    author = ListUserAuthorSerializer()
 
     class Meta:
         model = Sommaire
@@ -93,12 +108,72 @@ class SommaireSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         request = self.context['request']
+        
         numero = attrs['numero']
         sommaire = Sommaire.objects.filter(numero=numero)
         #verify conflict
-        if (sommaire.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and sommaire[0].id != int(request.data['id'])):
+        if (sommaire.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and sommaire.exists() and sommaire[0].id != int(request.data['id'])):
             raise serializers.ValidationError(f"Ce numéro est déjà lié au ({sommaire[0].label}.")
         
         return super().validate(attrs)
     
+    def create(self, validated_data):
+        nesteed_authors = validated_data.pop('author', None)
+        sommaire = Sommaire.objects.create(**validated_data)
+        for data in nesteed_authors:
+            user = User.objects.filter(email=data['email'])
+            if not user.exists():
+                author_serializer = UserAuthorSerializer(data=data)
+                if author_serializer.is_valid():
+                    user, author = author_serializer.create(author_serializer.data)
+            sommaire.author.add(user)
+        return sommaire
+    
+    def update(self, instance, validated_data):
+        nesteed_authors = validated_data.pop('author', None)
+        sommaire = super().update(instance, validated_data)
+        for data in nesteed_authors:
+            user = User.objects.filter(email=data['email'])
+            author_serializer = UserAuthorSerializer(data=data)
+            if author_serializer.is_valid():
+                if user.exists():
+                    user, author = author_serializer.update(author_serializer.data)
+                else:
+                    user, author = author_serializer.create(author_serializer.data)
+            sommaire.author.add(user)
+        return sommaire
+    
 
+class SommaireSerializerList(serializers.ModelSerializer):
+
+    class Meta:
+        model = Sommaire
+        fields = '__all__'
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['numero_ordre'] = instance.numero.number
+        return data
+    
+    # Définissez la documentation pour l'attribut supplémentaire
+    extra_attribute = serializers.CharField(
+        help_text="Ceci est l'attribut supplémentaire ajouté manuellement."
+    )
+
+class TypeSourceSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = TypeSource
+        fields = "__all__"
+
+    def validate(self, attrs):
+        request = self.context['request']
+        type_name = attrs['type_name']
+        type_elt = TypeSource.objects.filter(type_name=type_name)
+        #import pdb; pdb.set_trace()
+        #verify conflict
+        if (type_elt.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and type_elt.exists() and type_elt[0].id != int(request.data['id'])):
+            raise serializers.ValidationError(f"Ce type de source existe déjà.")
+        
+        return super().validate(attrs)
+    

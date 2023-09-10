@@ -4,9 +4,9 @@ from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from rest_framework import status
 from rest_framework.permissions import IsAdminUser
-from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer
+from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer
 from drf_yasg.utils import swagger_auto_schema
-from .models import Volume, Numero, Sommaire
+from .models import Volume, Numero, Sommaire, TypeSource
 
 
 class VolumeViewSet(ModelViewSet):
@@ -44,7 +44,7 @@ class NumeroViewSet(ModelViewSet):
     def get_queryset(self, volume_id: int=0):
         if volume_id != 0: #get numero for volume_id given
             return Numero.objects.filter(volume=volume_id)
-        return Numero.objects.all()
+        return Numero.objects.all().order_by('-number')
 
     def create(self, request, *args, **kwargs):
         self.permission_classes = [IsAdminUser]
@@ -70,7 +70,7 @@ class SommaireViewset(ModelViewSet):
     permission_classes = []
 
     def get_queryset(self):
-        return Sommaire.objects.all()
+        return Sommaire.objects.all().order_by('-numero__number')
     
     def create(self, request, *args, **kwargs):
         self.permission_classes = [IsAdminUser]
@@ -86,5 +86,29 @@ class SommaireViewset(ModelViewSet):
         self.permission_classes = [IsAdminUser]
         self.check_permissions(request)
         return super().destroy(request, *args, **kwargs)
+
+@swagger_auto_schema(
+    responses={200: SommaireSerializer}
+)
+class NumeroListView(ReadOnlyModelViewSet):
+    serializer_class = NumeroSerializerList
+
+    def get_queryset(self):
+        return Numero.objects.all().order_by('-number')
     
+@swagger_auto_schema(
+    responses={200: SommaireSerializerList}
+)
+class SommaireListView(ReadOnlyModelViewSet):
+    serializer_class = SommaireSerializerList
+
+    def get_queryset(self):
+        return Numero.objects.all().order_by('-number')
+    
+class TypeSourceView(ModelViewSet):
+    serializer_class = TypeSourceSerializer
+    permission_classes = [IsAdminUser]
+
+    def get_queryset(self):
+        return TypeSource.objects.all()
     

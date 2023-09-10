@@ -41,7 +41,7 @@ class TestNumero(APITestCase):
 
     def test_update(self):
         #raise error if not admin
-        uri = f'{BASE_URI_API_FOR_TEST}api/numero/{self.numero.id}/'
+        uri = f'{self.URI}{self.numero.id}/'
         self.numero_data['volume'] = self.volume.id
         self.numero_data['id'] = self.numero.id
         self.client.force_authenticate(self.user)
@@ -56,7 +56,7 @@ class TestNumero(APITestCase):
         self.assertEqual(json_format['number'], self.numero_data['number'])
 
     def test_delete(self):
-        uri = f"{BASE_URI_API_FOR_TEST}api/numero/{self.numero.id}/"
+        uri = f"{self.URI}{self.numero.id}/"
         self.client.force_authenticate(self.user)
         response = self.client.delete(uri)
         #raise 403 forbiden if no admin user
