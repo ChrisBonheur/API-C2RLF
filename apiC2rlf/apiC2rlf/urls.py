@@ -11,6 +11,7 @@ from rest_framework import routers
 
 from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView, SourceView
 
+from pageContent.views import *
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -34,6 +35,9 @@ router.register('numero', NumeroViewSet, basename='numero')
 router.register('numero-list', NumeroListView, basename='numero_list')
 router.register('type_source-list', TypeSourceView, basename='type_source')
 router.register('source', SourceView, basename='source')
+#page content
+router.register('pages', PageViewSet, basename="page")
+router.register('pages-list', PageViewSetList, basename="pages_list")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
