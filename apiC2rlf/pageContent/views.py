@@ -9,9 +9,6 @@ class PageViewSet(ModelViewSet):
     serializer_class = PageSerializer
     permission_classes = [IsAdminUser]
 
-    def update(self, request, *args, **kwargs):
-        return super().update(request, *args, **kwargs)
-
     def get_queryset(self):
         return PageContent.objects.all().order_by('order')
     
