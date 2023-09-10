@@ -9,7 +9,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
 
-from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView
+from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView, SourceView
 
 
 schema_view = get_schema_view(
@@ -33,6 +33,7 @@ router.register('sommaire-list', SommaireListView, basename='sommaire_list')
 router.register('numero', NumeroViewSet, basename='numero')
 router.register('numero-list', NumeroListView, basename='numero_list')
 router.register('type_source-list', TypeSourceView, basename='type_source')
+router.register('source', SourceView, basename='source')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

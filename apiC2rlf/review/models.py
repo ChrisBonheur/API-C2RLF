@@ -44,6 +44,6 @@ class Source(models.Model):
     authors = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     city = models.CharField(max_length=50, null=True, blank=True)
-    year_publication = models.DateField(null=True, blank=True)
+    year_publication = models.CharField(max_length=4, null=True, blank=True)
     editor = models.CharField(max_length=255, null=True, blank=True)
     type_source = models.ForeignKey(TypeSource, on_delete=models.PROTECT)

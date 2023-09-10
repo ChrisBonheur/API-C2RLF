@@ -3,11 +3,11 @@ from django.http import HttpResponse
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from rest_framework import status
-from rest_framework.permissions import IsAdminUser
-from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer
+from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly
+from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer
 from drf_yasg.utils import swagger_auto_schema
-from .models import Volume, Numero, Sommaire, TypeSource
-
+from .models import Volume, Numero, Sommaire, TypeSource, Source
+from django.test import override_settings
 
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
@@ -110,5 +110,14 @@ class TypeSourceView(ModelViewSet):
     permission_classes = [IsAdminUser]
 
     def get_queryset(self):
+        self.permission_classes = []
         return TypeSource.objects.all()
     
+class SourceView(ModelViewSet):
+    serializer_class = SourceSerializer
+    permission_classes = [IsAuthenticatedOrReadOnly]
+
+    def get_queryset(self):
+        return Source.objects.all()
+    
+

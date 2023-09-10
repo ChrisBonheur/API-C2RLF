@@ -9,7 +9,7 @@ import uuid
 
 from rest_framework.fields import empty
 
-from .models import Volume, Numero, Sommaire, TypeSource
+from .models import Volume, Numero, Sommaire, TypeSource, Source
 from apiC2rlf.enum import RequestMethod
 from author.serializers import ListUserAuthorSerializer, UserAuthorSerializer
 
@@ -177,3 +177,9 @@ class TypeSourceSerializer(serializers.ModelSerializer):
         
         return super().validate(attrs)
     
+
+class SourceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Source
+        fields = '__all__'
+
