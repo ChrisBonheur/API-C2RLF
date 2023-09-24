@@ -210,7 +210,7 @@ class ListReferenceSerializer(serializers.ListSerializer):
 
 class ArticleSerializer(serializers.ModelSerializer):
     authors = ListUserAuthorSerializer()
-    file_submit = Base64ToFieleField(required=True)
+    file_submit = Base64ToFieleField(required=False, allow_null=True)
     pdf_file = Base64ToFieleField(required=False, allow_null=True)
     references = ListReferenceSerializer(required=False)
 

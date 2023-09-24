@@ -2,7 +2,7 @@ from typing import Iterable, Optional
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import UniqueConstraint
-from django.db.models.signals import post_delete, post_save
+from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 import os
 
@@ -93,4 +93,12 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 def post_delete_receiver(sender, instance, **kwargs):
     if instance.file_submit:
         res = os.system(f"rm media/{instance.file_submit}")
-        print(res)
+    if instance.pdf_file:
+        os.system(f"rm media/{instance.pdf_file}")
+
+"""
+@receiver(pre_save, sender=Article)
+def post_delete_receiver(sender, instance, **kwargs):
+    if instance.file_submit:
+        res = os.system(f"rm media/{instance.file_submit}")
+"""
