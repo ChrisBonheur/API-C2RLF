@@ -13,11 +13,11 @@ class UserAuthorSerializer(Serializer):
     last_name = serializers.CharField(max_length=50)
     first_name = serializers.CharField(max_length=50)
     adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)
-    contact = serializers.CharField(max_length=25, required=False)
+    contact = serializers.CharField(max_length=25, required=False, allow_null=True, allow_blank=True)
     institution = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)
     aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)
     email = serializers.EmailField()
-    password = serializers.CharField()
+    password = serializers.CharField(required=False, allow_null=True, allow_blank=True, default='1234')
     photo = serializers.CharField(required=False, allow_null=True, allow_blank=True, write_only=False)
 
     def create(self, validated_data):
@@ -51,11 +51,11 @@ class UserAuthorSerializer(Serializer):
 
         author = Author.objects.get_or_create(user=user)[0]
 
-        author.adress= validated_data['adress']
-        author.contact=validated_data['contact']
-        author.institution=validated_data['institution']
-        author.adress=validated_data['adress']
-        author.aboutAuthor=validated_data['aboutAuthor']
+        author.adress= validated_data['adress'] if validated_data.get('adress') else ""
+        author.contact=validated_data['contact'] if validated_data.get('contact') else ""
+        author.institution=validated_data['institution'] if validated_data.get('institution') else "" 
+        author.adress=validated_data['adress'] if validated_data.get('adress') else ""
+        author.aboutAuthor=validated_data['aboutAuthor'] if validated_data.get('aboutAuthor') else ""
         
         if validated_data.get('photo'):
             try:

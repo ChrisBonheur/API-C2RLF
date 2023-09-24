@@ -9,7 +9,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
 
-from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView, SourceView
+from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView, SourceView, ArticleViewSet, ArticleListView, ValidSubmitArticle, PublicationtArticle
 
 from pageContent.views import *
 
@@ -38,10 +38,15 @@ router.register('source', SourceView, basename='source')
 #page content
 router.register('pages', PageViewSet, basename="page")
 router.register('pages-list', PageViewSetList, basename="pages_list")
+router.register('article', ArticleViewSet, basename='article')
+router.register('article-list', ArticleListView, basename='articles_list')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('author.urls')),
+    path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),
+    path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),
+    #path('api/article/', include('review.urls')),
     path('api/', include(router.urls)),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),

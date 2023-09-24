@@ -54,10 +54,9 @@ class TestSommaire(APITestCase):
                 'last_name': "maf",
                 'first_name': "chris",
                 'adress': 'rue',
-                'contact': '068324433',
                 'institution': 'marien ngoubi',
                 'aboutAuthor': 'je suis author',
-                'email': 'email@gmail.com',
+                'email': 'chris@gmail.com',
                 'password': '1234',
             },
             {

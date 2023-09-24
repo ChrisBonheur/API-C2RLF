@@ -2,12 +2,14 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
+from rest_framework.views import APIView
 from rest_framework import status
-from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly
-from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer
+from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly, IsAuthenticated
+from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer, ArticleSerializer, ArticleSerializerList, ArticleSerializerViewOne
 from drf_yasg.utils import swagger_auto_schema
-from .models import Volume, Numero, Sommaire, TypeSource, Source
+from .models import Volume, Numero, Sommaire, TypeSource, Source, Article
 from django.test import override_settings
+from apiC2rlf.enum import ArticleState
 
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
@@ -120,4 +122,103 @@ class SourceView(ModelViewSet):
     def get_queryset(self):
         return Source.objects.all()
     
+
+class ArticleViewSet(ModelViewSet):
+    serializer_class = ArticleSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        return Article.objects.all()
+
+    @swagger_auto_schema(
+        responses={200: ArticleSerializer},
+        request_body=ArticleSerializer,
+    )
+    def post(self, request, format=None):
+        serializer = ArticleSerializer(data=request.data)
+        import pdb;pdb.set_trace()
+        if serializer.is_valid():
+            article = serializer.create(serializer.data)
+            serializer_article = ArticleSerializerViewOne(article)
+            return Response(serializer_article.data)
+        return Response(serializer.errors)
+
+    @swagger_auto_schema(
+        responses={200: None},
+    )
+    def destroy(self, request, format=None,*args, **kwargs):
+        article = get_object_or_404(Article, pk=kwargs['pk'])
+        user = request.user
+        if (user == article.user and article.state == ArticleState.INITIALISATION.value) or user.is_superuser:
+            article.delete()
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+        else:
+            return Response({"Interdit": "Vous n'avez pas l'abilitation requise pour effectuer cette action."}, status=status.HTTP_403_FORBIDDEN)
+
+
+    """ 
+    @swagger_auto_schema(
+        responses={200: ArticleSerializerViewOne},
+        request_body=ArticleSerializer
+    )
+    def update(self, request, format=None, *args, **kwargs):
+        article = get_object_or_404(Article, pk=kwargs['pk'])
+        user = request.user
+        if (user == article.user and article.state == ArticleState.INITIALISATION.value) or user.is_superuser:
+            serializer = ArticleSerializer(data=request.data)
+            serializer.file_submit = request.data.get('file_submit')
+            import pdb;pdb.set_trace()
+            if serializer.is_valid():
+                article = serializer.update(article, serializer.data)
+                serializer = ArticleSerializerViewOne(article)
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            return Response({"Interdit": "Vous n'avez pas l'abilitation requise pour effectuer cette action."}, status=status.HTTP_403_FORBIDDEN)"""
+        
+
+@swagger_auto_schema(
+    responses={200: ArticleSerializerList}
+)
+class ArticleListView(ReadOnlyModelViewSet):
+    serializer_class = ArticleSerializerList
+    permission_classes = []
+    def get_queryset(self,*args, **kwargs):
+        request = self.request
+        if request.GET.get('state'):
+            state = request.GET.get('state')
+            return Article.objects.filter(state=state).order_by('numero__number')
+        return Article.objects.all().order_by('numero__number')
+    
+  
+@swagger_auto_schema(
+    responses={200: ArticleSerializerViewOne},
+    request_body=ArticleSerializer
+)
+class ValidSubmitArticle(APIView):
+    permission_classes = [IsAdminUser]
+    def get(self, request, pk):
+        article = get_object_or_404(Article, pk=pk)
+        article.state = ArticleState.PARRUTION.value
+        article.save()
+        serializer = ArticleSerializerViewOne(article)
+        return Response(serializer.data)
+
+@swagger_auto_schema(
+    responses={200: ArticleSerializerViewOne},
+    request_body=ArticleSerializer
+) 
+class PublicationtArticle(APIView):
+    permission_classes = [IsAdminUser]
+    def get(self, request, pk):
+        article = get_object_or_404(Article, pk=pk)
+        article.state = ArticleState.PUBLICATION.value
+        article.save()
+        serializer = ArticleSerializerViewOne(article)
+        return Response(serializer.data)
+
+
+
+
+
 

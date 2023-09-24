@@ -137,3 +137,5 @@ class TestAuthor(APITestCase):
         req_json = json.loads(req.content.decode('utf-8'))
         self.assertEqual(req_json['username'], self.user.username)
         self.assertNotIsInstance(req_json, list)
+
+        

@@ -10,7 +10,7 @@ class Author(models.Model):
     adress = models.CharField(max_length=255, null=True, blank=True)
     contact = models.CharField(max_length=30, null=True, blank=True)
     institution = models.CharField(max_length=100)
-    aboutAuthor = models.CharField(max_length=255)
+    aboutAuthor = models.CharField(max_length=255, null=True, blank=True)
     photo = models.ImageField(null=True, blank=True, upload_to="pictures/avatars")
 
 @receiver(post_save, sender=Author)

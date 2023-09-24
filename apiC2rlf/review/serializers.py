@@ -1,6 +1,7 @@
 from rest_framework import serializers, status
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
+from rest_framework.exceptions import PermissionDenied
 from django.core.files.base import ContentFile
 from datetime import datetime
 from django.contrib.auth.models import User
@@ -9,9 +10,9 @@ import uuid
 
 from rest_framework.fields import empty
 
-from .models import Volume, Numero, Sommaire, TypeSource, Source
-from apiC2rlf.enum import RequestMethod
-from author.serializers import ListUserAuthorSerializer, UserAuthorSerializer
+from .models import Reference ,Volume, Numero, Sommaire, TypeSource, Source, Article
+from apiC2rlf.enum import ArticleState, RequestMethod
+from author.serializers import ListUserAuthorSerializer, UserAuthorSerializer, UserSerializer
 
 class Base64ToFieleField(serializers.FileField):
 
@@ -126,6 +127,8 @@ class SommaireSerializer(serializers.ModelSerializer):
                 author_serializer = UserAuthorSerializer(data=data)
                 if author_serializer.is_valid():
                     user, author = author_serializer.create(author_serializer.data)
+            else:
+                user = user[0]
             sommaire.author.add(user)
         return sommaire
     
@@ -133,14 +136,24 @@ class SommaireSerializer(serializers.ModelSerializer):
         nesteed_authors = validated_data.pop('author', None)
         sommaire = super().update(instance, validated_data)
         for data in nesteed_authors:
-            user = User.objects.filter(email=data['email'])
+            user_in = User.objects.filter(email=data['email'])
             author_serializer = UserAuthorSerializer(data=data)
             if author_serializer.is_valid():
-                if user.exists():
-                    user, author = author_serializer.update(author_serializer.data)
+                if user_in.exists():
+                    user = user_in[0]
+                    user, author = author_serializer.update(author_serializer.data, user.id)
                 else:
                     user, author = author_serializer.create(author_serializer.data)
             sommaire.author.add(user)
+        
+        #remove not extisting author in new list authors
+        emails_in_nesteed = [author['email'] for author in nesteed_authors]
+
+        for email_obj in sommaire.author.values('email'):
+            if not email_obj['email'] in emails_in_nesteed:
+                #import pdb;pdb.set_trace()
+                author_to_rmv = User.objects.get(email=email_obj['email'])
+                sommaire.author.remove(author_to_rmv)
         return sommaire
     
 
@@ -154,11 +167,7 @@ class SommaireSerializerList(serializers.ModelSerializer):
         data = super().to_representation(instance)
         data['numero_ordre'] = instance.numero.number
         return data
-    
-    # Définissez la documentation pour l'attribut supplémentaire
-    extra_attribute = serializers.CharField(
-        help_text="Ceci est l'attribut supplémentaire ajouté manuellement."
-    )
+
 
 class TypeSourceSerializer(serializers.ModelSerializer):
 
@@ -183,3 +192,126 @@ class SourceSerializer(serializers.ModelSerializer):
         model = Source
         fields = '__all__'
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        if isinstance(instance, Source):
+            if instance.type_source:
+                data['type_source_name'] = instance.type_source.type_name
+        return data
+
+class ReferenceSerializer(serializers.ModelSerializer):
+    source = SourceSerializer()
+    class Meta:
+        model = Reference
+        fields = '__all__'
+
+class ListReferenceSerializer(serializers.ListSerializer):
+    child = ReferenceSerializer()
+
+class ArticleSerializer(serializers.ModelSerializer):
+    authors = ListUserAuthorSerializer()
+    file_submit = Base64ToFieleField(required=True)
+    pdf_file = Base64ToFieleField(required=False, allow_null=True)
+    references = ListReferenceSerializer(required=False)
+
+    class Meta:
+        model = Article
+        fields = '__all__'
+
+    def create(self, validated_data):
+        
+        nesteed_authors = validated_data.pop('authors', None)
+        nesteed_references = validated_data.pop('references', None)
+        article = Article.objects.create(**validated_data)
+        for data in nesteed_authors:
+            user = User.objects.filter(email=data['email'])
+            if not user.exists():
+                author_serializer = UserAuthorSerializer(data=data)
+                if author_serializer.is_valid():
+                    user, author = author_serializer.create(author_serializer.data)
+            else:
+                user = user[0]
+            article.authors.add(user)
+        
+        if nesteed_references:
+            for data in nesteed_references:
+                source = Source.objects.create(**data['source'])
+                data['source'] = source
+                reference = Reference.objects.create(**data)
+                article.references.add(reference)
+        return article
+    
+    
+    def update(self, instance, validated_data):
+        user = self.context['request'].user
+        article = instance
+        if (user == article.user and article.state == ArticleState.INITIALISATION.value) or user.is_superuser:
+            nesteed_authors = validated_data.pop('authors', None)
+            nesteed_references = validated_data.pop('references', None)
+            #validated_data['user'] = get_object_or_404(User, pk=validated_data['user'])
+            #if validated_data.get('numero'):
+                #validated_data['numero'] = get_object_or_404(Numero, pk=validated_data['numero'])
+            
+            article = super().update(instance, validated_data)
+            for data in nesteed_authors:
+                user_in = User.objects.filter(email=data['email'])
+                author_serializer = UserAuthorSerializer(data=data)
+                if author_serializer.is_valid():
+                    if user_in.exists():
+                        user = user_in[0]
+                        user, author = author_serializer.update(author_serializer.data, user.id)
+                    else:
+                        user, author = author_serializer.create(author_serializer.data)
+                article.authors.add(user)
+            
+            #remove not extisting author in new list authors
+            emails_in_nesteed = [author['email'] for author in nesteed_authors]
+
+            for email_obj in article.authors.values('email'):
+                if not email_obj['email'] in emails_in_nesteed:
+                    #import pdb;pdb.set_trace()
+                    author_to_rmv = User.objects.get(email=email_obj['email'])
+                    article.authors.remove(author_to_rmv)
+
+            #remove old:
+            for data in article.references.all():
+                article.references.remove(data)
+
+            if nesteed_references:
+                for data in nesteed_references:
+                    source = Source.objects.create(**data['source'])
+                    data['source'] = source
+                    reference = Reference.objects.create(**data)
+                    article.references.add(reference)
+            return article
+        raise PermissionDenied("Vous n'avez pas l'abilitation requise pour effectuer cette action.", code=status.HTTP_403_FORBIDDEN)
+    
+
+
+
+
+class ArticleSerializerViewOne(serializers.ModelSerializer):
+    user = UserSerializer()
+    authors = ListUserAuthorSerializer()
+    numero = NumeroSerializer()
+    references = ListReferenceSerializer()
+    file_submit = Base64ToFieleField(required=False, allow_null=True)
+    pdf_file = Base64ToFieleField(required=False, allow_null=True)
+    class Meta:
+        model = Article
+        fields = '__all__'
+
+
+    
+class ArticleSerializerList(serializers.ModelSerializer):
+    class Meta:
+        model = Article
+        fields = ['id', 'date_ajout', 'date_accept', 'title_fr', 'date_publication', 'numero', 'page_begin', 'page_end', 'state']
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        if instance.numero:
+            data['numero_ordre'] = instance.numero.number
+        if instance.page_begin and instance.page_end:
+            data['interval_page'] = f"{instance.page_begin}-{instance.page_end}"
+        return data

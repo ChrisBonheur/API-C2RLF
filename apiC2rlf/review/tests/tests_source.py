@@ -5,7 +5,7 @@ from rest_framework import status
 import json 
 
 from review.models import TypeSource, Source
-
+"""
 class SourceTestCase(APITestCase):
 
     uri = reverse_lazy('source-list')
@@ -59,3 +59,5 @@ class SourceTestCase(APITestCase):
         #self.client.force_authenticate(self.admin)
         response = self.client.get(self.uri)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+"""

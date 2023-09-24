@@ -18,9 +18,6 @@ from django.core.exceptions import PermissionDenied
 class AuthorAPIView(APIView):
     permission_classes = []
 
-    @swagger_auto_schema(
-        responses={200: UserSerializer}
-    )
     def get(self, request, id_user: int = 0):
         """Get one user or more
         Args:
