@@ -235,3 +235,8 @@ class TestArticle(APITestCase):
         response = self.client.get(reverse_lazy('publication-article', args=(self.article.id, )))
         jsonformat = json.loads(response.content.decode('utf-8'))
         self.assertEqual(jsonformat['state'], ArticleState.PUBLICATION.value)
+
+    def test_most_downloader(self):
+        response = self.client.get(reverse_lazy('popular-article'))
+        jsonformat = json.loads(response.content.decode('utf-8'))
+        self.assertLessEqual(len(jsonformat), 5)

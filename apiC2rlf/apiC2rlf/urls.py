@@ -9,7 +9,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
 
-from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView, SourceView, ArticleViewSet, ArticleListView, ValidSubmitArticle, PublicationtArticle
+from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, SommaireListView, NumeroListView, TypeSourceView, SourceView, ArticleViewSet, ArticleListView, ValidSubmitArticle, PublicationtArticle, MostDownloadsArticle
 
 from pageContent.views import *
 
@@ -46,6 +46,7 @@ urlpatterns = [
     path('user/', include('author.urls')),
     path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),
     path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),
+    path('api/popular/article/', MostDownloadsArticle.as_view(), name='popular-article'),
     #path('api/article/', include('review.urls')),
     path('api/', include(router.urls)),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),

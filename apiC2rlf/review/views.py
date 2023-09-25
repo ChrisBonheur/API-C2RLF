@@ -10,6 +10,7 @@ from drf_yasg.utils import swagger_auto_schema
 from .models import Volume, Numero, Sommaire, TypeSource, Source, Article
 from django.test import override_settings
 from apiC2rlf.enum import ArticleState
+from datetime import datetime
 
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
@@ -200,6 +201,7 @@ class ValidSubmitArticle(APIView):
     def get(self, request, pk):
         article = get_object_or_404(Article, pk=pk)
         article.state = ArticleState.PARRUTION.value
+        article.date_accept = datetime.now()
         article.save()
         serializer = ArticleSerializerViewOne(article)
         return Response(serializer.data)
@@ -213,12 +215,22 @@ class PublicationtArticle(APIView):
     def get(self, request, pk):
         article = get_object_or_404(Article, pk=pk)
         article.state = ArticleState.PUBLICATION.value
+        article.date_publication = datetime.now()
         article.save()
         serializer = ArticleSerializerViewOne(article)
         return Response(serializer.data)
 
 
-
+@swagger_auto_schema(
+    responses={200: ArticleSerializerList},
+    request_body=ArticleSerializer
+) 
+class MostDownloadsArticle(APIView):
+    permission_classes = []
+    def get(self, request):
+        articles = Article.objects.filter(state=ArticleState.PUBLICATION.value).order_by('-counter_download')[:5]
+        serializer = ArticleSerializerList(articles, many=True)
+        return Response(serializer.data)
 
 
 
