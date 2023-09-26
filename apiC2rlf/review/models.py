@@ -16,12 +16,7 @@ class Numero(models.Model):
     volume = models.ForeignKey(Volume, on_delete=models.CASCADE)
     datecreation = models.DateField(auto_now_add=True)
     label = models.CharField(max_length=100, null=True, blank=True)
-    number = models.PositiveSmallIntegerField()
-
-    class Meta:
-        constraints = [
-            UniqueConstraint(fields=['number', 'volume'], name='unique_numero_by_volume')
-        ]
+    number = models.PositiveSmallIntegerField(unique=True)
 
     def save(self, *args, **kwargs) -> None:
         self.label = f"N॰{self.number} du volume n॰{self.volume.number}"

@@ -208,7 +208,7 @@ class TestArticle(APITestCase):
         article_data['references'] = [self.references_data]
         article_data["file_submit"] = base64_file
         
-        response = self.client.post(self.URI, data=article_data, format='json')
+        response = self.client.post(self.URI + '?retrieve=1', data=article_data, format='json')
         self.assertEqual(articles_count_before + 1, Article.objects.count())
 
     #valid initialization that will become a parrution article

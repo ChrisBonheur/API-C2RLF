@@ -125,24 +125,21 @@ class SourceView(ModelViewSet):
     
 
 class ArticleViewSet(ModelViewSet):
-    serializer_class = ArticleSerializer
     permission_classes = [IsAuthenticated]
+    queryset = Article.objects.all()
 
-    def get_queryset(self):
-        return Article.objects.all()
+    def get_serializer_class(self):
+        if self.action in ['create', 'update'] or self.request.GET.get('retrieve'):
+            return ArticleSerializer
+        return ArticleSerializerViewOne
+    
+    def get_permissions(self):
+        if self.action in ['create', 'update']:
+            permission_classes = [IsAuthenticated]
+        else:
+            permission_classes = []
 
-    @swagger_auto_schema(
-        responses={200: ArticleSerializer},
-        request_body=ArticleSerializer,
-    )
-    def post(self, request, format=None):
-        serializer = ArticleSerializer(data=request.data)
-        import pdb;pdb.set_trace()
-        if serializer.is_valid():
-            article = serializer.create(serializer.data)
-            serializer_article = ArticleSerializerViewOne(article)
-            return Response(serializer_article.data)
-        return Response(serializer.errors)
+        return [permission() for permission in permission_classes]
 
     @swagger_auto_schema(
         responses={200: None},
@@ -214,9 +211,12 @@ class PublicationtArticle(APIView):
     permission_classes = [IsAdminUser]
     def get(self, request, pk):
         article = get_object_or_404(Article, pk=pk)
-        article.state = ArticleState.PUBLICATION.value
-        article.date_publication = datetime.now()
-        article.save()
+        if article.state != ArticleState.PUBLICATION.value:
+            article.state = ArticleState.PUBLICATION.value
+            article.date_publication = datetime.now()
+            article.save()
+            serializer = ArticleSerializerViewOne(article)
+            return Response(serializer.data)
         serializer = ArticleSerializerViewOne(article)
         return Response(serializer.data)
 

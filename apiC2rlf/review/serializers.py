@@ -81,12 +81,18 @@ class NumeroSerializer(serializers.ModelSerializer):
     def validate(self, data, *args, **kwargs):
         #check that number isn't exist in volume
         request = self.context['request']
-        number = Numero.objects.filter(number=data['number'], volume=data['volume'])
-        volume = data['volume']
+        number = Numero.objects.filter(number=data['number'])
         if (number.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and number.exists() and number[0].id != int(request.data['id'])):
-            raise serializers.ValidationError(f"Ce nombre de numéro existe déjà pour le volume ({volume.volume_year} n॰{volume.number}).")
+            raise serializers.ValidationError(f"Ce nombre de numéro existe déjà.")
 
         return super().validate(data)
+    
+class NumeroRetrieveSerializer(serializers.ModelSerializer):
+    volume = VolumeSerializer()
+
+    class Meta:
+        model = Numero
+        fields = "__all__"
     
 class NumeroSerializerList(serializers.ModelSerializer):
     class Meta:
@@ -287,13 +293,14 @@ class ArticleSerializer(serializers.ModelSerializer):
         raise PermissionDenied("Vous n'avez pas l'abilitation requise pour effectuer cette action.", code=status.HTTP_403_FORBIDDEN)
     
 
-
+class UserListSerializer(serializers.ListSerializer):
+    child = UserSerializer()
 
 
 class ArticleSerializerViewOne(serializers.ModelSerializer):
     user = UserSerializer()
-    authors = ListUserAuthorSerializer()
-    numero = NumeroSerializer()
+    authors = UserListSerializer()
+    numero = NumeroRetrieveSerializer()
     references = ListReferenceSerializer()
     file_submit = Base64ToFieleField(required=False, allow_null=True)
     pdf_file = Base64ToFieleField(required=False, allow_null=True)
