@@ -233,4 +233,13 @@ class MostDownloadsArticle(APIView):
         return Response(serializer.data)
 
 
-
+@swagger_auto_schema(
+    responses={200: ArticleSerializerList},
+    request_body=ArticleSerializer
+) 
+class LastArticlePublication(APIView):
+    permission_classes = []
+    def get(self, request):
+        articles = Article.objects.filter(state=ArticleState.PUBLICATION.value).order_by('-id')[:3]
+        serializer = ArticleSerializerList(articles, many=True)
+        return Response(serializer.data)
