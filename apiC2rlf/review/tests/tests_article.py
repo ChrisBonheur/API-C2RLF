@@ -240,3 +240,25 @@ class TestArticle(APITestCase):
         response = self.client.get(reverse_lazy('popular-article'))
         jsonformat = json.loads(response.content.decode('utf-8'))
         self.assertLessEqual(len(jsonformat), 5)
+
+    def test_article_filter(self):
+        uri = reverse_lazy('filter-article')
+        article = self.article
+        article_data = {
+            "title_fr": "article titre fr",
+            "title_ang": "article titre ang",
+            "abstract_fr": "abstract_fr titre fr",
+            "numero": self.numero.id,
+            "keywords_fr": "keywords_fr titre fr",
+            "keywords_ang": "keywords_ang titre fr",
+            "page_begin": 1,
+            "page_end": 10,
+            "doi_link": "doi_link",
+            "orcid_link": "orcid_link",
+            "user": self.user.id,
+            "id": article.id
+        }
+        response = self.client.post(uri, data=article_data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        json_format = json.loads(response.content.decode('utf-8'))
+        self.assertEqual(len(json_format), 1)

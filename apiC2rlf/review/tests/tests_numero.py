@@ -70,3 +70,18 @@ class TestNumero(APITestCase):
         numero = self.numero#create numero by calling it on setup
         response = self.client.get(self.URI)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+
+    def test_filter(self):
+        uri = reverse_lazy('numero-filter')
+        self.numero_data = {
+            "number": 1,
+            "volume": self.volume.id
+        }
+        response = self.client.post(uri, data=self.numero_data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        json_format = json.loads(response.content.decode('utf-8'))
+        self.assertEqual(len(json_format), 1)
+
+        
+

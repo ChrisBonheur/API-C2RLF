@@ -40,7 +40,7 @@ class TestVolume(APITestCase):
         volume = Volume.objects.create(**self.volume)
         self.volume['pages_number'] = 20
         self.volume['number'] = 2
-        self.volume['volume_year'] = 2023
+        self.volume['volume_year'] = 2026
         self.client.force_authenticate(user=self.superuser)
         response = self.client.put(f'{BASE_URI_API_FOR_TEST}api/volume/{volume.id}/', data=self.volume)
         jsonFormat = json.loads(response.content.decode('utf-8'))

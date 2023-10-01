@@ -7,10 +7,10 @@ from django.dispatch import receiver
 import os
 
 class Volume(models.Model):
-    number = models.PositiveSmallIntegerField(unique=True)
+    number = models.PositiveSmallIntegerField()
     datecreation = models.DateTimeField(auto_now_add=True)
     pages_number = models.PositiveSmallIntegerField()
-    volume_year = models.PositiveIntegerField(unique=True)
+    volume_year = models.PositiveIntegerField()
     
 class Numero(models.Model):
     volume = models.ForeignKey(Volume, on_delete=models.CASCADE)

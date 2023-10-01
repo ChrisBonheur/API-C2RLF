@@ -5,7 +5,7 @@ from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly, IsAuthenticated
-from .serializers import VolumeSerializer, VolumeUpdateSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer, ArticleSerializer, ArticleSerializerList, ArticleSerializerViewOne
+from .serializers import VolumeSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer, ArticleSerializer, ArticleSerializerList, ArticleSerializerViewOne
 from drf_yasg.utils import swagger_auto_schema
 from .models import Volume, Numero, Sommaire, TypeSource, Source, Article
 from django.test import override_settings
@@ -14,28 +14,15 @@ from datetime import datetime
 
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
-    permission_classes = []
+    queryset = Volume.objects.all().order_by('-volume_year')
 
-    def get_queryset(self):
-        return Volume.objects.all()
-    
-    @swagger_auto_schema(
-        responses={200: VolumeSerializer}
-    )
-    def create(self, request, *args, **kwargs):
-        self.permission_classes = [IsAdminUser]
-        self.check_permissions(request)
-        return super().create(request, *args, **kwargs)
-    
-    @swagger_auto_schema(
-        responses={200: VolumeSerializer}
-    )
-    def update(self, request, *args, **kwargs):
-        self.serializer_class = VolumeUpdateSerializer
-        self.permission_classes = [IsAdminUser]
-        self.check_permissions(request)
-        return super().update(request, *args, **kwargs)
-    
+    def get_permissions(self):
+        if self.action in ['create', 'update', 'destroy']:
+            permission_classes = [IsAdminUser]
+        else:
+            permission_classes = []
+        return [permission() for permission in permission_classes]
+
 
 @swagger_auto_schema(
     responses={200: NumeroSerializer}
@@ -48,21 +35,27 @@ class NumeroViewSet(ModelViewSet):
         if volume_id != 0: #get numero for volume_id given
             return Numero.objects.filter(volume=volume_id)
         return Numero.objects.all().order_by('-number')
+ 
+    def get_permissions(self):
+        if self.action in ['create', 'update', 'destroy']:
+            permission_classes = [IsAdminUser]
+        else:
+            permission_classes = []
+        return [permission() for permission in permission_classes]
 
-    def create(self, request, *args, **kwargs):
-        self.permission_classes = [IsAdminUser]
+    @swagger_auto_schema(
+        responses={200: NumeroSerializer}
+    )
+    def filter_numero(self, request):
+        self.permission_classes = []
         self.check_permissions(request)
-        return super().create(request, *args, **kwargs)
-    
-    def update(self, request, *args, **kwargs):
-        self.permission_classes = [IsAdminUser]
-        self.check_permissions(request)
-        return super().update(request, *args, **kwargs)
-
-    def destroy(self, request, *args, **kwargs):
-        self.permission_classes = [IsAdminUser]
-        self.check_permissions(request)
-        return super().destroy(request, *args, **kwargs)
+        filter_obj = {}
+        #transform queryDict to json
+        for key, value in request.data.items():
+            filter_obj[key] = value
+        numeros = Numero.objects.filter(**filter_obj).order_by('-number')
+        serializer = NumeroSerializer(numeros, many=True)
+        return Response(serializer.data)
     
 
 @swagger_auto_schema(
@@ -132,6 +125,18 @@ class ArticleViewSet(ModelViewSet):
         if self.action in ['create', 'update'] or self.request.GET.get('retrieve'):
             return ArticleSerializer
         return ArticleSerializerViewOne
+    
+
+    def filter_article(self, request):
+        self.permission_classes = []
+        self.check_permissions(request)
+        filter_obj = {}
+        #transform queryDict to json
+        for key, value in request.data.items():
+            filter_obj[key] = value
+        article = Article.objects.filter(**filter_obj).order_by('-date_publication')
+        serializer = ArticleSerializerList(article, many=True)
+        return Response(serializer.data)
     
     def get_permissions(self):
         if self.action in ['create', 'update']:
@@ -243,3 +248,4 @@ class LastArticlePublication(APIView):
         articles = Article.objects.filter(state=ArticleState.PUBLICATION.value).order_by('-id')[:3]
         serializer = ArticleSerializerList(articles, many=True)
         return Response(serializer.data)
+    
