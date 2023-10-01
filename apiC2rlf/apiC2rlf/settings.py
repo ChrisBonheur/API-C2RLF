@@ -97,7 +97,10 @@ DATABASES = {
         'USER': 'cp2163363p23_bonheur',  
         'PASSWORD': 'hsbil8vqcABs',
         'HOST': 'localhost',
-        'PORT': '3306',   
+        'PORT': '3306',  
+        'OPTIONS': {
+            'sql_mode': 'STRICT_ALL_TABLES',
+        }, 
     }
 }
 
