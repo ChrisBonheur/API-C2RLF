@@ -1,4 +1,6 @@
 venv/
 *__pycache__/
+apiC2rlf/settings.py
 media/
 */migrations/*
+apiC2rlf/settings.py
