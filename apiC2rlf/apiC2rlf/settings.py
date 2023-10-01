@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'apiC2rlf.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'c2rlf',   
+        'NAME': 'cp2163363p23_c2rlf',   
         'USER': 'cp2163363p23_bonheur',  
         'PASSWORD': 'hsbil8vqcABs',
         'HOST': 'localhost',
