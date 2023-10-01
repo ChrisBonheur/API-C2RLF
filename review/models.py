@@ -19,7 +19,8 @@ class Numero(models.Model):
     number = models.PositiveSmallIntegerField(unique=True)
 
     def save(self, *args, **kwargs) -> None:
-        self.label = f"N॰{self.number} du volume n॰{self.volume.number}"
+        label_value = f"N॰{self.number} du volume n॰{self.volume.number}"
+        self.label = label_value.encode('utf-8', 'ignore').decode('utf-8')
         super(Numero, self).save(*args, **kwargs)
 
 class Sommaire(models.Model):
