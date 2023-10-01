@@ -2,3 +2,4 @@
 *__pycache__/
 apiC2rlf/settings.py
 media/
+*/migrations/*
