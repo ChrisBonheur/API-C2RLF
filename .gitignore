@@ -4,3 +4,4 @@ apiC2rlf/settings.py
 media/
 */migrations/0*
 apiC2rlf/settings.py
+db.sqlite3
