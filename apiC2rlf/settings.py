@@ -90,6 +90,7 @@ WSGI_APPLICATION = 'apiC2rlf.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 #if os.environ.get('ENV') == 'PRODUCTION':
+""""""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
