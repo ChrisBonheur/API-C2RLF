@@ -262,3 +262,8 @@ class TestArticle(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         json_format = json.loads(response.content.decode('utf-8'))
         self.assertEqual(len(json_format), 1)
+
+    def test_get_statistique(self):
+        response = self.client.get(reverse_lazy('statistique'))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        

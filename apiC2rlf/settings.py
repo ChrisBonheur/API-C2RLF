@@ -45,7 +45,9 @@ INSTALLED_APPS = [
     'drf_yasg',
     'review',
     'author',
-    'pageContent'
+    'pageContent',
+    'ouvrage',
+    'cours'
 ]
 
 MIDDLEWARE = [
@@ -90,7 +92,6 @@ WSGI_APPLICATION = 'apiC2rlf.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 #if os.environ.get('ENV') == 'PRODUCTION':
-#"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -105,6 +106,7 @@ DATABASES = {
     }
 }
 """
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -112,7 +114,6 @@ DATABASES = {
     }
 }
 """
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 

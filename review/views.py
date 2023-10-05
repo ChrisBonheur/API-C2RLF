@@ -5,12 +5,13 @@ from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly, IsAuthenticated
-from .serializers import VolumeSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer, ArticleSerializer, ArticleSerializerList, ArticleSerializerViewOne
+from .serializers import VolumeSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer, ArticleSerializer, ArticleSerializerList, ArticleSerializerViewOne, statisitiqueSerializer
 from drf_yasg.utils import swagger_auto_schema
 from .models import Volume, Numero, Sommaire, TypeSource, Source, Article
 from django.test import override_settings
 from apiC2rlf.enum import ArticleState
 from datetime import datetime
+from django.contrib.auth.models import User
 
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
@@ -157,6 +158,27 @@ class ArticleViewSet(ModelViewSet):
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         else:
             return Response({"Interdit": "Vous n'avez pas l'abilitation requise pour effectuer cette action."}, status=status.HTTP_403_FORBIDDEN)
+
+    @swagger_auto_schema(
+        responses={200: statisitiqueSerializer},
+    )
+    def getSatat(self, request):
+        data = {
+            'numero': Numero.objects.count(),
+            'sommaire': Sommaire.objects.count(),
+            'article_init': Article.objects.filter(state=ArticleState.INITIALISATION.value).count(),
+            'article_parution': Article.objects.filter(state=ArticleState.PARRUTION.value).count(),
+            'article_publication': Article.objects.filter(state=ArticleState.PUBLICATION.value).count(),
+            'cours_pdf': 0,
+            'ouvrage': 0,
+            'authors_active': User.objects.filter(is_active=True).count()
+        }
+        
+        serialializer = statisitiqueSerializer(data=data)
+        if serialializer.is_valid():
+            return Response(serialializer.data)
+        return Response(serialializer.errors)
+    
 
 
     """ 

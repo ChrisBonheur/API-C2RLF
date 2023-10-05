@@ -1,0 +1,2897 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "system",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "statistics",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "statistics",
+        "description": "statistics",
+        "detail": "statistics",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "get_schema_view",
+        "importPath": "drf_yasg.views",
+        "description": "drf_yasg.views",
+        "isExtraImport": true,
+        "detail": "drf_yasg.views",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "VolumeViewSet",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroViewSet",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "SommaireViewset",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "SommaireListView",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroListView",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSourceView",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "SourceView",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleViewSet",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleListView",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "ValidSubmitArticle",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "PublicationtArticle",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "MostDownloadsArticle",
+        "importPath": "review.views",
+        "description": "review.views",
+        "isExtraImport": true,
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "pageContent.views",
+        "description": "pageContent.views",
+        "isExtraImport": true,
+        "detail": "pageContent.views",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageViewSet",
+        "importPath": "ouvrage.views",
+        "description": "ouvrage.views",
+        "isExtraImport": true,
+        "detail": "ouvrage.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryViewSet",
+        "importPath": "ouvrage.views",
+        "description": "ouvrage.views",
+        "isExtraImport": true,
+        "detail": "ouvrage.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "post_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "post_delete",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "pre_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
+        "isExtraImport": true,
+        "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
+        "isExtraImport": true,
+        "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User;",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "ModelSerializer",
+        "importPath": "rest_framework.serializers",
+        "description": "rest_framework.serializers",
+        "isExtraImport": true,
+        "detail": "rest_framework.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Serializer",
+        "importPath": "rest_framework.serializers",
+        "description": "rest_framework.serializers",
+        "isExtraImport": true,
+        "detail": "rest_framework.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "ContentFile",
+        "importPath": "django.core.files.base",
+        "description": "django.core.files.base",
+        "isExtraImport": true,
+        "detail": "django.core.files.base",
+        "documentation": {}
+    },
+    {
+        "label": "ContentFile",
+        "importPath": "django.core.files.base",
+        "description": "django.core.files.base",
+        "isExtraImport": true,
+        "detail": "django.core.files.base",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APIRequestFactory",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "force_authenticate",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleUploadedFile",
+        "importPath": "django.core.files.uploadedfile",
+        "description": "django.core.files.uploadedfile",
+        "isExtraImport": true,
+        "detail": "django.core.files.uploadedfile",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "importPath": "author.models",
+        "description": "author.models",
+        "isExtraImport": true,
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
+        "label": "obtain_auth_token",
+        "importPath": "rest_framework.authtoken.views",
+        "description": "rest_framework.authtoken.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.authtoken.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionDenied",
+        "importPath": "rest_framework.exceptions",
+        "description": "rest_framework.exceptions",
+        "isExtraImport": true,
+        "detail": "rest_framework.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionDenied",
+        "importPath": "rest_framework.exceptions",
+        "description": "rest_framework.exceptions",
+        "isExtraImport": true,
+        "detail": "rest_framework.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "django.db.utils",
+        "description": "django.db.utils",
+        "isExtraImport": true,
+        "detail": "django.db.utils",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticatedOrReadOnly",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionDenied",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "override_settings",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "ListUserAuthorSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserAuthorSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ListUserAuthorSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserAuthorSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Base64ToFieleField",
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "isExtraImport": true,
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Base64ToFieleField",
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "isExtraImport": true,
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "ouvrage.models",
+        "description": "ouvrage.models",
+        "isExtraImport": true,
+        "detail": "ouvrage.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "ouvrage.models",
+        "description": "ouvrage.models",
+        "isExtraImport": true,
+        "detail": "ouvrage.models",
+        "documentation": {}
+    },
+    {
+        "label": "Ouvrage",
+        "importPath": "ouvrage.models",
+        "description": "ouvrage.models",
+        "isExtraImport": true,
+        "detail": "ouvrage.models",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ReadOnlyModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ReadOnlyModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.enum",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleState",
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.enum",
+        "documentation": {}
+    },
+    {
+        "label": "RequestMethod",
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.enum",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleState",
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.enum",
+        "documentation": {}
+    },
+    {
+        "label": "Article",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Numero",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Volume",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSource",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reference",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Source",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Volume",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Numero",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sommaire",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Volume",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Numero",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSource",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Source",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSource",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Volume",
+        "importPath": "review.models",
+        "description": "review.models",
+        "isExtraImport": true,
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URI_API_FOR_TEST",
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URI_API_FOR_TEST",
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "empty",
+        "importPath": "rest_framework.fields",
+        "description": "rest_framework.fields",
+        "isExtraImport": true,
+        "detail": "rest_framework.fields",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "management",
+        "importPath": "django.core",
+        "description": "django.core",
+        "isExtraImport": true,
+        "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "apiC2rlf.asgi",
+        "description": "apiC2rlf.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "apiC2rlf.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "RequestMethod",
+        "kind": 6,
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
+        "peekOfCode": "class RequestMethod(Enum):\n    POST = 'POST'\n    PUT = 'PUT'\n    DELETE = 'DELETE'\nclass ArticleState(Enum):\n    INITIALISATION = 1\n    PARRUTION = 2\n    PUBLICATION = 3",
+        "detail": "apiC2rlf.enum",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleState",
+        "kind": 6,
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
+        "peekOfCode": "class ArticleState(Enum):\n    INITIALISATION = 1\n    PARRUTION = 2\n    PUBLICATION = 3",
+        "detail": "apiC2rlf.enum",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-5s)f8()+t9ewfeph*jytj)gd_o$jl@#3da775j)snyl#^%4+6r'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-5s)f8()+t9ewfeph*jytj)gd_o$jl@#3da775j)snyl#^%4+6r'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'corsheaders',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'corsheaders',\n    'rest_framework',\n    'rest_framework_simplejwt',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n]",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "ROOT_URLCONF = 'apiC2rlf.urls'\nREST_FRAMEWORK = {\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',\n    'PAGE_SIZE': 15,\n    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',)\n}\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',\n    'PAGE_SIZE': 15,\n    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',)\n}\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  \n        'PASSWORD': 'hsbil8vqcABs',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  \n        'PASSWORD': 'hsbil8vqcABs',\n        'HOST': 'localhost',\n        'PORT': '3306',  \n        'OPTIONS': {\n            'sql_mode': 'STRICT_ALL_TABLES',",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n\"\"\"\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'fr'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/3.2/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCORS_ORIGIN_ALLOW_ALL = True",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = True\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = True\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')\n# Default primary key field type\n# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = True\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n}",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = True\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n}\n# Static files settings\nPROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\nSTATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ORIGIN_ALLOW_ALL",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOW_CREDENTIALS = True\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n}\n# Static files settings\nPROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\nSTATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')\n# Extra places for collectstatic to find static files.",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_CREDENTIALS",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "CORS_ALLOW_CREDENTIALS = True\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n}\n# Static files settings\nPROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\nSTATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')\n# Extra places for collectstatic to find static files.\nSTATICFILES_DIRS = (",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n}\n# Static files settings\nPROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\nSTATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')\n# Extra places for collectstatic to find static files.\nSTATICFILES_DIRS = (\n    os.path.join(PROJECT_ROOT, 'staticfiles'),",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "PROJECT_ROOT",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\nSTATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')\n# Extra places for collectstatic to find static files.\nSTATICFILES_DIRS = (\n    os.path.join(PROJECT_ROOT, 'staticfiles'),\n)\nBASE_URI_API_FOR_TEST = \"http://localhost:8000/\"",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')\n# Extra places for collectstatic to find static files.\nSTATICFILES_DIRS = (\n    os.path.join(PROJECT_ROOT, 'staticfiles'),\n)\nBASE_URI_API_FOR_TEST = \"http://localhost:8000/\"",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "STATICFILES_DIRS = (\n    os.path.join(PROJECT_ROOT, 'staticfiles'),\n)\nBASE_URI_API_FOR_TEST = \"http://localhost:8000/\"",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URI_API_FOR_TEST",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "BASE_URI_API_FOR_TEST = \"http://localhost:8000/\"",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "apiC2rlf.urls",
+        "description": "apiC2rlf.urls",
+        "peekOfCode": "schema_view = get_schema_view(\n    openapi.Info(\n        title=\"C2RLF API\",\n        default_version='v1',\n        description=\"api For review\",\n        terms_of_service=\"https://www.example.com/terms/\",\n        contact=openapi.Contact(email=\"bonheurmafoundou@gmail.com\"),\n        license=openapi.License(name=\"\"),\n    ),\n    public=True,",
+        "detail": "apiC2rlf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "apiC2rlf.urls",
+        "description": "apiC2rlf.urls",
+        "peekOfCode": "router = routers.SimpleRouter()\nrouter.register('volume', VolumeViewSet, basename='volume')\nrouter.register('sommaire', SommaireViewset, basename='sommaire')\nrouter.register('sommaire-list', SommaireListView, basename='sommaire_list')\nrouter.register('numero', NumeroViewSet, basename='numero')\nrouter.register('numero-list', NumeroListView, basename='numero_list')\nrouter.register('type_source-list', TypeSourceView, basename='type_source')\nrouter.register('source', SourceView, basename='source')\n#page content\nrouter.register('pages', PageViewSet, basename=\"page\")",
+        "detail": "apiC2rlf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apiC2rlf.urls",
+        "description": "apiC2rlf.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/', include('author.urls')),\n    path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),\n    path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),\n    path('api/popular/article/', MostDownloadsArticle.as_view(), name='popular-article'),\n    path('api/ouvrage/filter/', OuvrageViewSet.as_view({'post': 'filter_ouvrage'}), name='filter-ouvrage'),\n    path('api/article/filter/', ArticleViewSet.as_view({'post': 'filter_article'}), name='filter-article'),\n    path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),\n    #path('api/article/', include('review.urls')),",
+        "detail": "apiC2rlf.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "apiC2rlf.wsgi",
+        "description": "apiC2rlf.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "apiC2rlf.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "author.migrations.0001_initial",
+        "description": "author.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Author',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "author.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorConfig",
+        "kind": 6,
+        "importPath": "author.apps",
+        "description": "author.apps",
+        "peekOfCode": "class AuthorConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'author'",
+        "detail": "author.apps",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "kind": 5,
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "peekOfCode": "base64_file = \"data:application/pdf;base64,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QzKHUY8/cPOTcqCDneSIQwtbSpp53EGSMQ4Riq39/K6rbMPvZ2uFvw+8/Es00Q9Abfhx8+2/Exj9iuDrsKo3YdL/hv3/ADrEhdwKZW5kc3RyZWFtCmVuZG9iagoxIDAgb2JqCjw8L1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUiA1IDAgUiA3IDAgUiA5IDAgUiAxMSAwIFIgMTMgMCBSIDE1IDAgUiAxNyAwIFIgXQovQ291bnQgOAo+PgplbmRvYmoKMTkgMCBvYmoKPDwvVHlwZSAvRm9udAovTmFtZSAvRjEKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZAovU3VidHlwZSAvVHlwZTEKL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKPj4KZW5kb2JqCjIwIDAgb2JqCjw8L1R5cGUgL0ZvbnQKL05hbWUgL0YyCi9CYXNlRm9udCAvVHJlYnVjaGV0TVMsQm9sZAovU3VidHlwZSAvVHJ1ZVR5cGUKL0ZpcnN0Q2hhciAwCi9MYXN0Q2hhciAyNTUKL1dpZHRocyBbMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIAowIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAzMDEgMCAwIDAgMCAwIDAgMCAKMCAwIDAgMCAwIDM2NyAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgCjAgMCAwIDAgMCA2MzMgMCA2MTEgMCA1NjggMCAwIDY4MyAyNzggMCAwIDU1MiA3NDUgMCA3MDMgCjU4NiAwIDYxMCA1MTEgMCAwIDAgMCA2MDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIAowIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgCjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAKMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIAowIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgCjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAKMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAw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MCAwIDU4OSA1NjUgMCAwIDAgMCA2NzYgMCAyNzggMCAwIDUwNiA3MDkgNjM4IDY3MyAKMCAwIDAgMCAwIDY0OCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgNTI1IDAgMCAKMCA1NDUgMCAwIDAgMjg1IDAgMCAyOTQgMCAwIDAgMCAwIDM4OCAwIDAgMCA0ODkgMCAKMCAwIDQ3NCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgCjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAKMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIAowIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgCjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAKMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIAowIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIF0KL0ZvbnREZXNjcmlwdG9yIDI0IDAgUgo+PgplbmRvYmoKMjQgMCBvYmoKPDwgL1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvVHJlYnVjaGV0TVMKL0ZsYWdzIDQgICAKL0ZvbnRCQm94IFsgLTUzMiAtMjYyIDEzMTEgOTg1IF0gICAKL1N0ZW1WIDgwICAgIAovQ2FwSGVpZ2h0IDAgICAKL0l0YWxpY0FuZ2xlIDAgICAKL0FzY2VudCA5MzkKL0Rlc2NlbnQgLTIyMgovTWF4V2lkdGggNzA5Ci9BdmdXaWR0aCA1MDUKL0ZvbnRGaWxlMiAyNSAwIFIKPj4KZW5kb2JqCjI1IDAgb2JqCjw8IC9GaWx0ZXIgL0ZsYXRlRGVjb2RlIAovTGVuZ3RoIDEwMTExCi9MZW5ndGgxIDE2NzIwCj4+CnN0cmVhbQ0KeJzdewt4VNW56Fprv/fsmdnzzIQBMpMhDx0wkAgJlMqWZPIwonmAmSHEJISQYIMGgYKPVvRYk0YFe2uBa9ur1Vo83qqTkUrw9iK2VjjVtLZatL3V2l5frcY+PmutwuT8/9ozEFrbfveec+69393Mv9da/15r7bX+97822Xb19n5i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HQFELL23dS1gFy6EHnGa2NS+kja3JMdV6FC7zi6D5vAF49XViU0R+w/7elJ14wvJ8KOVZCEpHA4Nb+XXtm1b//L699zO37i2kY9BEvKv7owj3QplbmRzdHJlYW0KZW5kb2JqCjIgMCBvYmoKPDwvUHJvY1NldCBbL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSV0KL0ZvbnQgPDwKL0YxIDE5IDAgUgovRjIgMjAgMCBSCi9GMyAyMyAwIFIKPj4KPj4KZW5kb2JqCjI2IDAgb2JqCjw8Ci9Qcm9kdWNlciAoV2luRGV2IDI1LjAgKDI1LjAuMjgxLjQpKQovQ3JlYXRpb25EYXRlIChEOjIwMjMwOTIyMDQzMzUyKQo+PgplbmRvYmoKMjcgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDEgMCBSCi9PcGVuQWN0aW9uIFszIDAgUiAvRml0SCBudWxsXQovUGFnZUxheW91dCAvT25lQ29sdW1uCj4+CmVuZG9iagp4cmVmCjAgMjgKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDMxNTkyIDAwMDAwIG4gCjAwMDAwNDk2MDAgMDAwMDAgbiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwMTU5IDAwMDAwIG4gCjAwMDAwMDM5NzIgMDAwMDAgbiAKMDAwMDAwNDExNiAwMDAwMCBuIAowMDAwMDA3OTQzIDAwMDAwIG4gCjAwMDAwMDgwODcgMDAwMDAgbiAKMDAwMDAxMTg3MSAwMDAwMCBuIAowMDAwMDEyMDE2IDAwMDAwIG4gCjAwMDAwMTU4MDkgMDAwMDAgbiAKMDAwMDAxNTk1NSAwMDAwMCBuIAowMDAwMDE5NzM0IDAwMDAwIG4gCjAwMDAwMTk4ODAgMDAwMDAgbiAKMDAwMDAyMzcwMiAwMDAwMCBuIAowMDAwMDIzODQ4IDAwMDAwIG4gCjAwMDAwMjc2NTcgMDAwMDAgbiAKMDAwMDAyNzgwMyAwMDAwMCBuIAowMDAwMDMxNjk1IDAwMDAwIG4gCjAwMDAwMzE4MDcgMDAwMDAgbiAKMDAwMDAzMjUxMCAwMDAwMCBuIAowMDAwMDMyNzUwIDAwMDAwIG4gCjAwMDAwMzg0NDAgMDAwMDAgbiAKMDAwMDAzOTE2MiAwMDAwMCBuIAowMDAwMDM5Mzk3IDAwMDAwIG4gCjAwMDAwNDk3MTEgMDAwMDAgbiAKMDAwMDA0OTgwMyAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9TaXplIDI4Ci9Sb290IDI3IDAgUgovSW5mbyAyNiAwIFIKL0lEWzwxMzMzMjljMmIwYjgzYjBiMmU0YjY3NzljY2E0MDI5OD48MTMzMzI5YzJiMGI4M2IwYjJlNGI2Nzc5Y2NhNDAyOTg+XQo+PgpzdGFydHhyZWYKNDk5MDcKJSVFT0YK\"",
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "kind": 6,
+        "importPath": "author.models",
+        "description": "author.models",
+        "peekOfCode": "class Author(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='author')\n    adress = models.CharField(max_length=255, null=True, blank=True)\n    contact = models.CharField(max_length=30, null=True, blank=True)\n    institution = models.CharField(max_length=100)\n    aboutAuthor = models.CharField(max_length=255, null=True, blank=True)\n    photo = models.ImageField(null=True, blank=True, upload_to=\"pictures/avatars\")\n@receiver(post_save, sender=Author)\ndef post_delete_receiver(sender, instance, **kwargs):\n    pass",
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
+        "label": "post_delete_receiver",
+        "kind": 2,
+        "importPath": "author.models",
+        "description": "author.models",
+        "peekOfCode": "def post_delete_receiver(sender, instance, **kwargs):\n    pass",
+        "detail": "author.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserAuthorSerializer",
+        "kind": 6,
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "peekOfCode": "class UserAuthorSerializer(Serializer):\n    username = serializers.CharField(max_length=50, required=False, allow_null=True, allow_blank=True)\n    last_name = serializers.CharField(max_length=50)\n    first_name = serializers.CharField(max_length=50)\n    adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)\n    contact = serializers.CharField(max_length=25, required=False, allow_null=True, allow_blank=True)\n    institution = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)\n    aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)\n    email = serializers.EmailField()\n    password = serializers.CharField(required=False, allow_null=True, allow_blank=True, default='1234')",
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorSerializer",
+        "kind": 6,
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "peekOfCode": "class AuthorSerializer(ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass UserListSerializer(ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'first_name', 'last_name', 'email']\nclass UserSerializer(ModelSerializer):\n    author = AuthorSerializer()",
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserListSerializer",
+        "kind": 6,
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "peekOfCode": "class UserListSerializer(ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'first_name', 'last_name', 'email']\nclass UserSerializer(ModelSerializer):\n    author = AuthorSerializer()\n    class Meta:\n        model = User\n        fields = '__all__'\nclass ListUserAuthorSerializer(serializers.ListSerializer):",
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "peekOfCode": "class UserSerializer(ModelSerializer):\n    author = AuthorSerializer()\n    class Meta:\n        model = User\n        fields = '__all__'\nclass ListUserAuthorSerializer(serializers.ListSerializer):\n    child = UserAuthorSerializer()",
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ListUserAuthorSerializer",
+        "kind": 6,
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "peekOfCode": "class ListUserAuthorSerializer(serializers.ListSerializer):\n    child = UserAuthorSerializer()",
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TestAuthor",
+        "kind": 6,
+        "importPath": "author.tests",
+        "description": "author.tests",
+        "peekOfCode": "class TestAuthor(APITestCase):\n    uri = 'author'\n    def setUp(self) -> None:\n        self.factory = APIRequestFactory()\n        self.user = User.objects.create_user(email='bonheur@gmail.com', password='1234', username='bonheur')\n        self.author = Author.objects.create(\n            adress='102 rue de test',\n            contact='068314433',\n            institution='dev',\n            aboutAuthor='me and me',",
+        "detail": "author.tests",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "author.urls",
+        "description": "author.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', AuthorAPIView.as_view(), name='author'),\n    path('<int:id_user>', AuthorAPIView.as_view(), name='author_one'),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "detail": "author.urls",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorAPIView",
+        "kind": 6,
+        "importPath": "author.views",
+        "description": "author.views",
+        "peekOfCode": "class AuthorAPIView(APIView):\n    permission_classes = []\n    def get(self, request, id_user: int = 0):\n        \"\"\"Get one user or more\n        Args:\n            id_user (int, optional): if id_user is past we get specific user.\n        Returns:\n            UserSerializer: list or single\n        \"\"\"\n        self.permission_classes = [IsAuthenticated]",
+        "detail": "author.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserAPIView",
+        "kind": 6,
+        "importPath": "author.views",
+        "description": "author.views",
+        "peekOfCode": "class UserAPIView(APIView):\n    def post(self, request):\n        data = {k: v for k, v in request.data.items()}\n        userSerializer = UserCreateSerailizer(data=request.data)\n        if userSerializer.is_valid():\n            try:\n                user = User.objects.create_user(**request.data)\n                serializer = UserSerializer(user)\n            except IntegrityError as err:\n                return Response({\"message\": \"Cet email est déjà utilisé !\"}, status=status.HTTP_409_CONFLICT)",
+        "detail": "author.views",
+        "documentation": {}
+    },
+    {
+        "label": "CoursConfig",
+        "kind": 6,
+        "importPath": "cours.apps",
+        "description": "cours.apps",
+        "peekOfCode": "class CoursConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'cours'",
+        "detail": "cours.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ouvrage.migrations.0001_initial",
+        "description": "ouvrage.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Category',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "ouvrage.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageConfig",
+        "kind": 6,
+        "importPath": "ouvrage.apps",
+        "description": "ouvrage.apps",
+        "peekOfCode": "class OuvrageConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'ouvrage'",
+        "detail": "ouvrage.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "ouvrage.models",
+        "description": "ouvrage.models",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=255)\nclass Ouvrage(models.Model):\n    title = models.CharField(max_length=255)\n    author = models.ManyToManyField(User, related_name='ouvrages')\n    year_parution = models.CharField(max_length=4, null=True, blank=True)\n    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)\n    presentation = models.TextField()\n    cover_image = models.ImageField(upload_to='ouvrage/cover', null=True, blank=True)\n    pdf_file = models.FileField(upload_to='ouvrage/pdf')",
+        "detail": "ouvrage.models",
+        "documentation": {}
+    },
+    {
+        "label": "Ouvrage",
+        "kind": 6,
+        "importPath": "ouvrage.models",
+        "description": "ouvrage.models",
+        "peekOfCode": "class Ouvrage(models.Model):\n    title = models.CharField(max_length=255)\n    author = models.ManyToManyField(User, related_name='ouvrages')\n    year_parution = models.CharField(max_length=4, null=True, blank=True)\n    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)\n    presentation = models.TextField()\n    cover_image = models.ImageField(upload_to='ouvrage/cover', null=True, blank=True)\n    pdf_file = models.FileField(upload_to='ouvrage/pdf')\n    version = models.CharField(max_length=10, null=True, blank=True)\n    edition = models.CharField(max_length=255, null=True, blank=True)",
+        "detail": "ouvrage.models",
+        "documentation": {}
+    },
+    {
+        "label": "categorySerializer",
+        "kind": 6,
+        "importPath": "ouvrage.serializers",
+        "description": "ouvrage.serializers",
+        "peekOfCode": "class categorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Category\n        fields = \"__all__\"\n    def validate(self, attrs):\n        catgories = Category.objects.filter(name=attrs['name'])\n        if catgories.exists():\n            raise serializers.ValidationError('Cette categorie existe déjà')\n        return super().validate(attrs)\nclass OuvrageSerializer(serializers.ModelSerializer):",
+        "detail": "ouvrage.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageSerializer",
+        "kind": 6,
+        "importPath": "ouvrage.serializers",
+        "description": "ouvrage.serializers",
+        "peekOfCode": "class OuvrageSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    pdf_file = Base64ToFieleField()\n    cover_image = Base64ToFieleField(required=False, allow_null=True)\n    class Meta:\n        model = Ouvrage\n        exclude = ['date_creation', 'user']\n    def create(self, validated_data):\n        authors = validated_data.pop('author', None)\n        validated_data['user'] = self.context['request'].user",
+        "detail": "ouvrage.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageSerializerList",
+        "kind": 6,
+        "importPath": "ouvrage.serializers",
+        "description": "ouvrage.serializers",
+        "peekOfCode": "class OuvrageSerializerList(serializers.ModelSerializer):\n    class Meta:\n        model = Ouvrage\n        fields = [\"title\", 'id', 'year_parution', 'version']\nclass OuvrageRetrieveSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    user = UserAuthorSerializer()\n    class Meta:\n        model = Ouvrage\n        fields = \"__all__\"",
+        "detail": "ouvrage.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageRetrieveSerializer",
+        "kind": 6,
+        "importPath": "ouvrage.serializers",
+        "description": "ouvrage.serializers",
+        "peekOfCode": "class OuvrageRetrieveSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    user = UserAuthorSerializer()\n    class Meta:\n        model = Ouvrage\n        fields = \"__all__\"\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        data['category_retrieve'] = categorySerializer(instance.category).data\n        data['author_retrieve'] = UserAuthorSerializer(instance.author, many=True).data",
+        "detail": "ouvrage.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TestCategory",
+        "kind": 6,
+        "importPath": "ouvrage.tests",
+        "description": "ouvrage.tests",
+        "peekOfCode": "class TestCategory(APITestCase):\n    uri = reverse_lazy('category-ouvrage-list')\n    def setUp(self) -> None:\n        self.user = User.objects.create_user(username='bonheur', email='bonheur@gmail.com', password='1234')\n        self.superuser = User.objects.create_superuser(username='chris', email='chris@gmail.com', password='1234')\n        self.category = Category.objects.create(**{'name': 'jeunesse'})\n    def test_create_raise_error_if_no_admin(self):\n        self.client.force_authenticate(self.user)\n        #raise error if no superuser\n        response = self.client.post(self.uri, data={'name': 'romans'})",
+        "detail": "ouvrage.tests",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageTest",
+        "kind": 6,
+        "importPath": "ouvrage.tests",
+        "description": "ouvrage.tests",
+        "peekOfCode": "class OuvrageTest(APITestCase):\n    uri = reverse_lazy('ouvrage-list')\n    def setUp(self) -> None:\n        self.user = User.objects.create_user(username='bonheur', email='bonheur@gmail.com', password='1234')\n        self.superuser = User.objects.create_superuser(username='chris', email='chris@gmail.com', password='1234')\n        self.category = Category.objects.create(**{'name': 'jeunesse'})\n        self.ouvrage_data = {\n            'title': 'La demeure des gouvernantes',\n            'year_parution': '2024',\n            'category': self.category,",
+        "detail": "ouvrage.tests",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryViewSet",
+        "kind": 6,
+        "importPath": "ouvrage.views",
+        "description": "ouvrage.views",
+        "peekOfCode": "class CategoryViewSet(ModelViewSet):\n    queryset = Category.objects.all()\n    serializer_class = categorySerializer\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:\n            permission_classes = [IsAdminUser]\n        else:\n            permission_classes = []\n        return [permission() for permission in permission_classes]\n@swagger_auto_schema(",
+        "detail": "ouvrage.views",
+        "documentation": {}
+    },
+    {
+        "label": "OuvrageViewSet",
+        "kind": 6,
+        "importPath": "ouvrage.views",
+        "description": "ouvrage.views",
+        "peekOfCode": "class OuvrageViewSet(ModelViewSet):\n    queryset = Ouvrage.objects.filter(is_active=True).order_by('-date_creation')\n    def get_serializer_class(self):\n        if self.action in ['create', 'update']:\n            return OuvrageSerializer\n        elif self.action == 'retrieve':\n            return OuvrageRetrieveSerializer\n        return OuvrageSerializerList\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:",
+        "detail": "ouvrage.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "pageContent.migrations.0001_initial",
+        "description": "pageContent.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='PageContent',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=50, unique=True)),",
+        "detail": "pageContent.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "PagecontentConfig",
+        "kind": 6,
+        "importPath": "pageContent.apps",
+        "description": "pageContent.apps",
+        "peekOfCode": "class PagecontentConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'pageContent'",
+        "detail": "pageContent.apps",
+        "documentation": {}
+    },
+    {
+        "label": "PageContent",
+        "kind": 6,
+        "importPath": "pageContent.models",
+        "description": "pageContent.models",
+        "peekOfCode": "class PageContent(models.Model):\n    title = models.CharField(max_length=50, unique=True)\n    content = models.TextField(null=True, blank=True)\n    date_update = models.DateTimeField(auto_now_add=True)\n    pdf_file = models.FileField(upload_to='pages-content', null=True, blank=True)\n    order = models.SmallIntegerField(default=1)",
+        "detail": "pageContent.models",
+        "documentation": {}
+    },
+    {
+        "label": "PageSerializer",
+        "kind": 6,
+        "importPath": "pageContent.serializers",
+        "description": "pageContent.serializers",
+        "peekOfCode": "class PageSerializer(serializers.ModelSerializer):\n    pdf_file = Base64ToFieleField(required=False, allow_null=True)\n    class Meta:\n        model = PageContent\n        fields = \"__all__\"",
+        "detail": "pageContent.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TestPageContent",
+        "kind": 6,
+        "importPath": "pageContent.tests",
+        "description": "pageContent.tests",
+        "peekOfCode": "class TestPageContent(APITestCase):\n    uri =  reverse_lazy('page-list')\n    def setUp(self):\n        self.user = User.objects.create_superuser(username='bonheur', email='bonheur@gmail.com', password='1234')\n        self.page_data = {\n            \"title\": \"liens institutitionel\",\n            \"content\": \"comntenuybjks \",\n            \"pdf_file\": base64_file\n        }\n        self.page = PageContent.objects.create(**self.page_data)",
+        "detail": "pageContent.tests",
+        "documentation": {}
+    },
+    {
+        "label": "PageViewSet",
+        "kind": 6,
+        "importPath": "pageContent.views",
+        "description": "pageContent.views",
+        "peekOfCode": "class PageViewSet(ModelViewSet):\n    serializer_class = PageSerializer\n    permission_classes = [IsAdminUser]\n    def get_queryset(self):\n        return PageContent.objects.all().order_by('order')\nclass PageViewSetList(ReadOnlyModelViewSet):\n    serializer_class = PageSerializer\n    def get_queryset(self):\n        return PageContent.objects.all().order_by('order')",
+        "detail": "pageContent.views",
+        "documentation": {}
+    },
+    {
+        "label": "PageViewSetList",
+        "kind": 6,
+        "importPath": "pageContent.views",
+        "description": "pageContent.views",
+        "peekOfCode": "class PageViewSetList(ReadOnlyModelViewSet):\n    serializer_class = PageSerializer\n    def get_queryset(self):\n        return PageContent.objects.all().order_by('order')",
+        "detail": "pageContent.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "review.migrations.0001_initial",
+        "description": "review.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Numero',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "review.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "TestArticle",
+        "kind": 6,
+        "importPath": "review.tests.tests_article",
+        "description": "review.tests.tests_article",
+        "peekOfCode": "class TestArticle(APITestCase):\n    URI = reverse_lazy('article-list')\n    PUBLIC_URI = reverse_lazy('articles_list-list')\n    def setUp(self):\n        self.volume = Volume.objects.create(**{\n            \"number\": 1,\n            \"pages_number\": 10,\n            \"volume_year\": 2023,\n        })\n        self.superuser =  User.objects.create_superuser(username=\"chris@gmail.com\", email=\"chris@gmail.com\", password=\"1234\")",
+        "detail": "review.tests.tests_article",
+        "documentation": {}
+    },
+    {
+        "label": "TestNumero",
+        "kind": 6,
+        "importPath": "review.tests.tests_numero",
+        "description": "review.tests.tests_numero",
+        "peekOfCode": "class TestNumero(APITestCase):\n    URI = reverse_lazy('numero-list')\n    def setUp(self):\n        self.superuser = User.objects.create_superuser(\"bonheur@gmail.com\", \"bonheur@gmail.com\", \"1234\")\n        self.user = User.objects.create_user(\"chris@gmail.com\", \"chris@gmail.com\", \"1234\")\n        self.volume = Volume.objects.create(**{\n            \"number\": 1,\n            \"pages_number\": 10,\n            \"volume_year\": 2023,\n        })",
+        "detail": "review.tests.tests_numero",
+        "documentation": {}
+    },
+    {
+        "label": "TestSommaire",
+        "kind": 6,
+        "importPath": "review.tests.tests_sommaire",
+        "description": "review.tests.tests_sommaire",
+        "peekOfCode": "class TestSommaire(APITestCase):\n    URI = reverse_lazy('sommaire-list')\n    def setUp(self):\n        self.superuser =  User.objects.create_superuser(username=\"chris@gmail.com\", email=\"chris@gmail.com\", password=\"1234\")\n        self.user = User.objects.create(username=\"bonheur@gmail.com\", email=\"bonheur@gmail.com\", password=\"1234\")\n        self.user2 = User.objects.create(username=\"bonheur2@gmail.com\", email=\"bonheur2@gmail.com\", password=\"1234\")\n        self.volume = Volume.objects.create(**{\n            \"number\": 1,\n            \"pages_number\": 10,\n            \"volume_year\": 2023,",
+        "detail": "review.tests.tests_sommaire",
+        "documentation": {}
+    },
+    {
+        "label": "SourceTestCase",
+        "kind": 6,
+        "importPath": "review.tests.tests_source",
+        "description": "review.tests.tests_source",
+        "peekOfCode": "class SourceTestCase(APITestCase):\n    uri = reverse_lazy('source-list')\n    def setUp(self):\n        self.user = User.objects.create_user(username='bonheur', email='bonheur@gmail.com', password='1223')\n        self.admin = User.objects.create_superuser(username='chris', email='chris@gmail.com', password='12344')\n        self.type_source = TypeSource.objects.create(type_name=\"journal\")\n        self.source_data = {\n            \"authors\": 'Darius Makeba; Milandu M',\n            \"title\": \"Au pays des loves\",\n            \"city\": \"Pointe-noire\",",
+        "detail": "review.tests.tests_source",
+        "documentation": {}
+    },
+    {
+        "label": "TestTypeSource",
+        "kind": 6,
+        "importPath": "review.tests.tests_type_source",
+        "description": "review.tests.tests_type_source",
+        "peekOfCode": "class TestTypeSource(APITestCase):\n    uri = reverse_lazy('type_source-list')\n    def setUp(self):\n        self.type_source = TypeSource.objects.create(type_name='Journal')\n        self.user = User.objects.create_superuser(username=\"bonheur@gmail.com\", email=\"bonheur@gmail.com\", password=\"1234\")\n        self.type_data = {\n            \"type_name\": \"Livre\"\n        }\n    def test_create(self):\n        before_create = TypeSource.objects.count()",
+        "detail": "review.tests.tests_type_source",
+        "documentation": {}
+    },
+    {
+        "label": "TestVolume",
+        "kind": 6,
+        "importPath": "review.tests.tests_volume",
+        "description": "review.tests.tests_volume",
+        "peekOfCode": "class TestVolume(APITestCase):\n    URI = reverse_lazy('volume-list')\n    def setUp(self) -> None:\n        self.superuser = User.objects.create_superuser(\"bonheur@gmail.com\", \"bonheur@gmail.com\", \"1234\")\n        self.user = User.objects.create_user(\"chris@gmail.com\", \"chris@gmail.com\", \"1234\")\n        self.volume = {\n            \"number\": 1,\n            \"pages_number\": 10,\n            \"volume_year\": 2023,\n        }",
+        "detail": "review.tests.tests_volume",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewConfig",
+        "kind": 6,
+        "importPath": "review.apps",
+        "description": "review.apps",
+        "peekOfCode": "class ReviewConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'review'",
+        "detail": "review.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Volume",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class Volume(models.Model):\n    number = models.PositiveSmallIntegerField()\n    datecreation = models.DateTimeField(auto_now_add=True)\n    pages_number = models.PositiveSmallIntegerField()\n    volume_year = models.PositiveIntegerField()\nclass Numero(models.Model):\n    volume = models.ForeignKey(Volume, on_delete=models.CASCADE)\n    datecreation = models.DateField(auto_now_add=True)\n    label = models.CharField(max_length=100, null=True, blank=True)\n    number = models.PositiveSmallIntegerField(unique=True)",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Numero",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class Numero(models.Model):\n    volume = models.ForeignKey(Volume, on_delete=models.CASCADE)\n    datecreation = models.DateField(auto_now_add=True)\n    label = models.CharField(max_length=100, null=True, blank=True)\n    number = models.PositiveSmallIntegerField(unique=True)\n    def save(self, *args, **kwargs) -> None:\n        label_value = f\"Numéro {self.number} du volume {self.volume.number}\"\n        self.label = label_value\n        super(Numero, self).save(*args, **kwargs)\nclass Sommaire(models.Model):",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sommaire",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class Sommaire(models.Model):\n    title = models.CharField(max_length=1000)\n    label = models.CharField(max_length=50, null=True, blank=True)\n    presentation = models.TextField()\n    numero = models.OneToOneField(Numero, on_delete=models.CASCADE)\n    picture = models.ImageField(null=True, blank=True, upload_to=\"pictures/sommaires\")\n    pdf_file = models.FileField(upload_to=\"pdfs/sommaires\")\n    author = models.ManyToManyField(User, related_name='sommaires')\n    def save(self, *args, **kwargs) -> None:\n        self.label = f\"sommaire lié au numero {self.numero.number}\"",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSource",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class TypeSource(models.Model):\n    type_name = models.CharField(max_length=50)\nclass Source(models.Model):\n    authors = models.CharField(max_length=255, null=True, blank=True)\n    title = models.CharField(max_length=255, null=True, blank=True)\n    city = models.CharField(max_length=50, null=True, blank=True)\n    year_publication = models.CharField(max_length=4, null=True, blank=True)\n    editor = models.CharField(max_length=255, null=True, blank=True)\n    type_source = models.ForeignKey(TypeSource, on_delete=models.PROTECT, null=True, blank=True)\nclass Reference(models.Model):",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Source",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class Source(models.Model):\n    authors = models.CharField(max_length=255, null=True, blank=True)\n    title = models.CharField(max_length=255, null=True, blank=True)\n    city = models.CharField(max_length=50, null=True, blank=True)\n    year_publication = models.CharField(max_length=4, null=True, blank=True)\n    editor = models.CharField(max_length=255, null=True, blank=True)\n    type_source = models.ForeignKey(TypeSource, on_delete=models.PROTECT, null=True, blank=True)\nclass Reference(models.Model):\n    source = models.OneToOneField(Source, on_delete=models.PROTECT, null=True, blank=True)\n    volume = models.CharField(max_length=255, null=True, blank=True)",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reference",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class Reference(models.Model):\n    source = models.OneToOneField(Source, on_delete=models.PROTECT, null=True, blank=True)\n    volume = models.CharField(max_length=255, null=True, blank=True)\n    publication = models.CharField(max_length=255, null=True, blank=True)\n    page_begin = models.IntegerField(null=True, blank=True)\n    page_end = models.IntegerField(null=True, blank=True)\n    edition_ref = models.CharField(max_length=255, null=True, blank=True)\nclass Article(models.Model):\n    class State(models.IntegerChoices):\n        INITIALISATION = 1",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Article",
+        "kind": 6,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "class Article(models.Model):\n    class State(models.IntegerChoices):\n        INITIALISATION = 1\n        PARRUTION = 2\n        PUBLICATION = 3\n    user = models.ForeignKey(User, on_delete=models.DO_NOTHING)\n    title_fr = models.CharField(max_length=255)\n    title_ang = models.CharField(max_length=255, null=True, blank=True)\n    date_ajout = models.DateTimeField(auto_now_add=True)\n    date_accept = models.DateTimeField(null=True, blank=True)",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "post_delete_receiver",
+        "kind": 2,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "def post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")\n    if instance.pdf_file:\n        os.system(f\"rm media/{instance.pdf_file}\")\n\"\"\"\n@receiver(pre_save, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "post_delete_receiver",
+        "kind": 2,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "def post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")\n\"\"\"",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "PROJECT_ROOT",
+        "kind": 5,
+        "importPath": "review.models",
+        "description": "review.models",
+        "peekOfCode": "PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\n@receiver(post_delete, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")\n    if instance.pdf_file:\n        os.system(f\"rm media/{instance.pdf_file}\")\n\"\"\"\n@receiver(pre_save, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):",
+        "detail": "review.models",
+        "documentation": {}
+    },
+    {
+        "label": "Base64ToFieleField",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class Base64ToFieleField(serializers.FileField):\n    def __init__(self, **kwargs):\n        super().__init__(**kwargs)\n    def to_internal_value(self, data):\n        if isinstance(data, str):\n            # If the data is in base64 format, decode it and create a ContentFile\n            try:\n                format, imgstr = data.split(';base64,')  # Ensure that 'data' is prefixed by 'data:image/'\n                ext = format.split('/')[-1]\n                name = format.split('/')[-2]",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "VolumeSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class VolumeSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Volume\n        fields = '__all__'\n    def validate(self, data):\n        request = self.context['request']\n        volume = Volume.objects.filter(volume_year=data['volume_year'])\n        if volume.exists():\n            if request.data.get('id') and request.method == RequestMethod.PUT.value:\n                #verif if volume_year conflict is not for the same model",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class NumeroSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Numero\n        fields = \"__all__\"\n    def validate(self, data, *args, **kwargs):\n        #check that number isn't exist in volume\n        request = self.context['request']\n        number = Numero.objects.filter(number=data['number'])\n        if (number.exists() and request.method == RequestMethod.POST.value) or (request.method == RequestMethod.PUT.value and number.exists() and number[0].id != int(request.data['id'])):\n            raise serializers.ValidationError(f\"Ce nombre de numéro existe déjà.\")",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroRetrieveSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class NumeroRetrieveSerializer(serializers.ModelSerializer):\n    volume = VolumeSerializer()\n    class Meta:\n        model = Numero\n        fields = \"__all__\"\nclass NumeroSerializerList(serializers.ModelSerializer):\n    class Meta:\n        model = Numero\n        fields = '__all__'\n    def to_representation(self, instance):",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroSerializerList",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class NumeroSerializerList(serializers.ModelSerializer):\n    class Meta:\n        model = Numero\n        fields = '__all__'\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        data['volume_label'] = f\"Vol n॰{instance.volume.number} {instance.volume.volume_year}\"\n        return data\nclass SommaireSerializer(serializers.ModelSerializer):\n    pdf_file = Base64ToFieleField()",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SommaireSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class SommaireSerializer(serializers.ModelSerializer):\n    pdf_file = Base64ToFieleField()\n    picture = Base64ToFieleField(required=False, allow_null=True)\n    author = ListUserAuthorSerializer()\n    class Meta:\n        model = Sommaire\n        fields = \"__all__\"\n    def validate(self, attrs):\n        request = self.context['request']\n        numero = attrs['numero']",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SommaireSerializerList",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class SommaireSerializerList(serializers.ModelSerializer):\n    class Meta:\n        model = Sommaire\n        fields = '__all__'\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        data['numero_ordre'] = instance.numero.number\n        return data\nclass TypeSourceSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSourceSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class TypeSourceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = TypeSource\n        fields = \"__all__\"\n    def validate(self, attrs):\n        request = self.context['request']\n        type_name = attrs['type_name']\n        type_elt = TypeSource.objects.filter(type_name=type_name)\n        #import pdb; pdb.set_trace()\n        #verify conflict",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SourceSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class SourceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Source\n        fields = '__all__'\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        if isinstance(instance, Source):\n            if instance.type_source:\n                data['type_source_name'] = instance.type_source.type_name\n        return data",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ReferenceSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class ReferenceSerializer(serializers.ModelSerializer):\n    source = SourceSerializer()\n    class Meta:\n        model = Reference\n        fields = '__all__'\nclass ListReferenceSerializer(serializers.ListSerializer):\n    child = ReferenceSerializer()\nclass ArticleSerializer(serializers.ModelSerializer):\n    authors = ListUserAuthorSerializer()\n    file_submit = Base64ToFieleField(required=False, allow_null=True)",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ListReferenceSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class ListReferenceSerializer(serializers.ListSerializer):\n    child = ReferenceSerializer()\nclass ArticleSerializer(serializers.ModelSerializer):\n    authors = ListUserAuthorSerializer()\n    file_submit = Base64ToFieleField(required=False, allow_null=True)\n    pdf_file = Base64ToFieleField(required=False, allow_null=True)\n    references = ListReferenceSerializer(required=False)\n    class Meta:\n        model = Article\n        fields = '__all__'",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class ArticleSerializer(serializers.ModelSerializer):\n    authors = ListUserAuthorSerializer()\n    file_submit = Base64ToFieleField(required=False, allow_null=True)\n    pdf_file = Base64ToFieleField(required=False, allow_null=True)\n    references = ListReferenceSerializer(required=False)\n    class Meta:\n        model = Article\n        fields = '__all__'\n    def create(self, validated_data):\n        nesteed_authors = validated_data.pop('authors', None)",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserListSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class UserListSerializer(serializers.ListSerializer):\n    child = UserSerializer()\nclass ArticleSerializerViewOne(serializers.ModelSerializer):\n    user = UserSerializer()\n    authors = UserListSerializer()\n    numero = NumeroRetrieveSerializer()\n    references = ListReferenceSerializer()\n    file_submit = Base64ToFieleField(required=False, allow_null=True)\n    pdf_file = Base64ToFieleField(required=False, allow_null=True)\n    class Meta:",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleSerializerViewOne",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class ArticleSerializerViewOne(serializers.ModelSerializer):\n    user = UserSerializer()\n    authors = UserListSerializer()\n    numero = NumeroRetrieveSerializer()\n    references = ListReferenceSerializer()\n    file_submit = Base64ToFieleField(required=False, allow_null=True)\n    pdf_file = Base64ToFieleField(required=False, allow_null=True)\n    class Meta:\n        model = Article\n        fields = '__all__'",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleSerializerList",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class ArticleSerializerList(serializers.ModelSerializer):\n    authors = ListUserAuthorSerializer()\n    class Meta:\n        model = Article\n        fields = ['id', 'date_ajout', 'date_accept', 'title_fr', 'date_publication', 'numero', 'page_begin', 'page_end', 'state', 'authors']\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        if instance.numero:\n            data['numero_ordre'] = instance.numero.number\n        if instance.page_begin and instance.page_end:",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "statisitiqueSerializer",
+        "kind": 6,
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "peekOfCode": "class statisitiqueSerializer(serializers.Serializer):\n    numero = serializers.IntegerField()\n    sommaire = serializers.IntegerField()\n    article_init = serializers.IntegerField()\n    article_parution = serializers.IntegerField()\n    article_publication = serializers.IntegerField()\n    cours_pdf = serializers.IntegerField()\n    authors_active = serializers.IntegerField()\n    ouvrage = serializers.IntegerField()",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "VolumeViewSet",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class VolumeViewSet(ModelViewSet):\n    serializer_class = VolumeSerializer\n    queryset = Volume.objects.all().order_by('-volume_year')\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:\n            permission_classes = [IsAdminUser]\n        else:\n            permission_classes = []\n        return [permission() for permission in permission_classes]\n@swagger_auto_schema(",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroViewSet",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class NumeroViewSet(ModelViewSet):\n    serializer_class = NumeroSerializer\n    permission_classes = []\n    def get_queryset(self, volume_id: int=0):\n        if volume_id != 0: #get numero for volume_id given\n            return Numero.objects.filter(volume=volume_id)\n        return Numero.objects.all().order_by('-number')\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:\n            permission_classes = [IsAdminUser]",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "SommaireViewset",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class SommaireViewset(ModelViewSet):\n    serializer_class = SommaireSerializer\n    permission_classes = []\n    def get_queryset(self):\n        return Sommaire.objects.all().order_by('-numero__number')\n    def create(self, request, *args, **kwargs):\n        self.permission_classes = [IsAdminUser]\n        self.check_permissions(request)\n        return super().create(request, *args, **kwargs)\n    def update(self, request, *args, **kwargs):",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "NumeroListView",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class NumeroListView(ReadOnlyModelViewSet):\n    serializer_class = NumeroSerializerList\n    def get_queryset(self):\n        return Numero.objects.all().order_by('-number')\n@swagger_auto_schema(\n    responses={200: SommaireSerializerList}\n)\nclass SommaireListView(ReadOnlyModelViewSet):\n    serializer_class = SommaireSerializerList\n    def get_queryset(self):",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "SommaireListView",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class SommaireListView(ReadOnlyModelViewSet):\n    serializer_class = SommaireSerializerList\n    def get_queryset(self):\n        return Numero.objects.all().order_by('-number')\nclass TypeSourceView(ModelViewSet):\n    serializer_class = TypeSourceSerializer\n    permission_classes = [IsAdminUser]\n    def get_queryset(self):\n        self.permission_classes = []\n        return TypeSource.objects.all()",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "TypeSourceView",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class TypeSourceView(ModelViewSet):\n    serializer_class = TypeSourceSerializer\n    permission_classes = [IsAdminUser]\n    def get_queryset(self):\n        self.permission_classes = []\n        return TypeSource.objects.all()\nclass SourceView(ModelViewSet):\n    serializer_class = SourceSerializer\n    permission_classes = [IsAuthenticatedOrReadOnly]\n    def get_queryset(self):",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "SourceView",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class SourceView(ModelViewSet):\n    serializer_class = SourceSerializer\n    permission_classes = [IsAuthenticatedOrReadOnly]\n    def get_queryset(self):\n        return Source.objects.all()\nclass ArticleViewSet(ModelViewSet):\n    permission_classes = [IsAuthenticated]\n    queryset = Article.objects.all()\n    def get_serializer_class(self):\n        if self.action in ['create', 'update'] or self.request.GET.get('retrieve'):",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleViewSet",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class ArticleViewSet(ModelViewSet):\n    permission_classes = [IsAuthenticated]\n    queryset = Article.objects.all()\n    def get_serializer_class(self):\n        if self.action in ['create', 'update'] or self.request.GET.get('retrieve'):\n            return ArticleSerializer\n        return ArticleSerializerViewOne\n    def filter_article(self, request):\n        self.permission_classes = []\n        self.check_permissions(request)",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleListView",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class ArticleListView(ReadOnlyModelViewSet):\n    serializer_class = ArticleSerializerList\n    permission_classes = []\n    def get_queryset(self,*args, **kwargs):\n        request = self.request\n        if request.GET.get('state'):\n            state = request.GET.get('state')\n            return Article.objects.filter(state=state).order_by('numero__number')\n        return Article.objects.all().order_by('numero__number')\n@swagger_auto_schema(",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "ValidSubmitArticle",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class ValidSubmitArticle(APIView):\n    permission_classes = [IsAdminUser]\n    def get(self, request, pk):\n        article = get_object_or_404(Article, pk=pk)\n        article.state = ArticleState.PARRUTION.value\n        article.date_accept = datetime.now()\n        article.save()\n        serializer = ArticleSerializerViewOne(article)\n        return Response(serializer.data)\n@swagger_auto_schema(",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "PublicationtArticle",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class PublicationtArticle(APIView):\n    permission_classes = [IsAdminUser]\n    def get(self, request, pk):\n        article = get_object_or_404(Article, pk=pk)\n        if article.state != ArticleState.PUBLICATION.value:\n            article.state = ArticleState.PUBLICATION.value\n            article.date_publication = datetime.now()\n            article.save()\n            serializer = ArticleSerializerViewOne(article)\n            return Response(serializer.data)",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "MostDownloadsArticle",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class MostDownloadsArticle(APIView):\n    permission_classes = []\n    def get(self, request):\n        articles = Article.objects.filter(state=ArticleState.PUBLICATION.value).order_by('-counter_download')[:5]\n        serializer = ArticleSerializerList(articles, many=True)\n        return Response(serializer.data)\n@swagger_auto_schema(\n    responses={200: ArticleSerializerList},\n    request_body=ArticleSerializer\n) ",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "LastArticlePublication",
+        "kind": 6,
+        "importPath": "review.views",
+        "description": "review.views",
+        "peekOfCode": "class LastArticlePublication(APIView):\n    permission_classes = []\n    def get(self, request):\n        articles = Article.objects.filter(state=ArticleState.PUBLICATION.value).order_by('-id')[:3]\n        serializer = ArticleSerializerList(articles, many=True)\n        return Response(serializer.data)",
+        "detail": "review.views",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.10/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.10/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.10/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.10/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.10/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "venv.bin.activate_this",
+        "description": "venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'apiC2rlf.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

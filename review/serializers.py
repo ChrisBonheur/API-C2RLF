@@ -33,7 +33,8 @@ class Base64ToFieleField(serializers.FileField):
 
                 data = ContentFile(base64.b64decode(imgstr), name=filename)
             except ValueError as e:
-                raise serializers.ValidationError("Ceci n'est pas un format base64 préfixé par 'data:image/'. ")
+                #raise serializers.ValidationError("Ceci n'est pas un format base64 préfixé par 'data:image/'. ")
+                return data
 
         return super(Base64ToFieleField, self).to_internal_value(data)
 
@@ -315,3 +316,13 @@ class ArticleSerializerList(serializers.ModelSerializer):
         if instance.page_begin and instance.page_end:
             data['interval_page'] = f"{instance.page_begin}-{instance.page_end}"
         return data
+    
+class statisitiqueSerializer(serializers.Serializer):
+    numero = serializers.IntegerField()
+    sommaire = serializers.IntegerField()
+    article_init = serializers.IntegerField()
+    article_parution = serializers.IntegerField()
+    article_publication = serializers.IntegerField()
+    cours_pdf = serializers.IntegerField()
+    authors_active = serializers.IntegerField()
+    ouvrage = serializers.IntegerField()
