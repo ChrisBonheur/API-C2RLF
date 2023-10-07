@@ -602,6 +602,46 @@
         "documentation": {}
     },
     {
+        "label": "PageNumberPagination",
+        "importPath": "rest_framework.pagination",
+        "description": "rest_framework.pagination",
+        "isExtraImport": true,
+        "detail": "rest_framework.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -627,6 +667,22 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -1197,30 +1253,6 @@
         "documentation": {}
     },
     {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
-        "isExtraImport": true,
-        "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
-        "isExtraImport": true,
-        "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
-        "isExtraImport": true,
-        "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
         "label": "PermissionDenied",
         "importPath": "rest_framework.exceptions",
         "description": "rest_framework.exceptions",
@@ -1381,6 +1413,14 @@
         "documentation": {}
     },
     {
+        "label": "UserListSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
         "label": "ListUserAuthorSerializer",
         "importPath": "author.serializers",
         "description": "author.serializers",
@@ -1514,6 +1554,14 @@
         "description": "rest_framework.viewsets",
         "isExtraImport": true,
         "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
         "documentation": {}
     },
     {
@@ -1873,7 +1921,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  \n        'PASSWORD': 'hsbil8vqcABs',",
+        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\n\"\"\"\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  ",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -1891,7 +1939,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n\"\"\"\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -2076,6 +2124,15 @@
         "documentation": {}
     },
     {
+        "label": "CustomPagination",
+        "kind": 6,
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "peekOfCode": "class CustomPagination(PageNumberPagination):\n    page_size = 1  # Nombre d'éléments par page\n    page_size_query_param = 'page_size'  # Paramètre pour spécifier le nombre d'éléments par page\n    max_page_size = 100  # Nombre maximal d'éléments par page",
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "apiC2rlf.wsgi",
@@ -2229,6 +2286,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ouvrage.migrations.0002_ouvrage_price",
+        "description": "ouvrage.migrations.0002_ouvrage_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('ouvrage', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='ouvrage',\n            name='price',\n            field=models.FloatField(default=0),\n            preserve_default=False,",
+        "detail": "ouvrage.migrations.0002_ouvrage_price",
+        "documentation": {}
+    },
+    {
         "label": "OuvrageConfig",
         "kind": 6,
         "importPath": "ouvrage.apps",
@@ -2278,7 +2344,7 @@
         "kind": 6,
         "importPath": "ouvrage.serializers",
         "description": "ouvrage.serializers",
-        "peekOfCode": "class OuvrageSerializerList(serializers.ModelSerializer):\n    class Meta:\n        model = Ouvrage\n        fields = [\"title\", 'id', 'year_parution', 'version']\nclass OuvrageRetrieveSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    user = UserAuthorSerializer()\n    class Meta:\n        model = Ouvrage\n        fields = \"__all__\"",
+        "peekOfCode": "class OuvrageSerializerList(serializers.ModelSerializer):\n    author = UserListSerializer(many=True)\n    class Meta:\n        model = Ouvrage\n        fields = [\"title\", 'id', 'year_parution', 'version', 'price', 'author']\nclass OuvrageRetrieveSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    user = UserAuthorSerializer()\n    class Meta:\n        model = Ouvrage",
         "detail": "ouvrage.serializers",
         "documentation": {}
     },
@@ -2683,7 +2749,7 @@
         "kind": 6,
         "importPath": "review.serializers",
         "description": "review.serializers",
-        "peekOfCode": "class ArticleSerializerList(serializers.ModelSerializer):\n    authors = ListUserAuthorSerializer()\n    class Meta:\n        model = Article\n        fields = ['id', 'date_ajout', 'date_accept', 'title_fr', 'date_publication', 'numero', 'page_begin', 'page_end', 'state', 'authors']\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        if instance.numero:\n            data['numero_ordre'] = instance.numero.number\n        if instance.page_begin and instance.page_end:",
+        "peekOfCode": "class ArticleSerializerList(serializers.ModelSerializer):\n    authors = ListUserAuthorSerializer()\n    class Meta:\n        model = Article\n        fields = \"__all__\"\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        if instance.numero:\n            data['numero_ordre'] = instance.numero.number\n        if instance.page_begin and instance.page_end:",
         "detail": "review.serializers",
         "documentation": {}
     },
@@ -2710,7 +2776,7 @@
         "kind": 6,
         "importPath": "review.views",
         "description": "review.views",
-        "peekOfCode": "class NumeroViewSet(ModelViewSet):\n    serializer_class = NumeroSerializer\n    permission_classes = []\n    def get_queryset(self, volume_id: int=0):\n        if volume_id != 0: #get numero for volume_id given\n            return Numero.objects.filter(volume=volume_id)\n        return Numero.objects.all().order_by('-number')\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:\n            permission_classes = [IsAdminUser]",
+        "peekOfCode": "class NumeroViewSet(ModelViewSet):\n    serializer_class = NumeroSerializer\n    permission_classes = []\n    def get_queryset(self, volume_id: int=0):\n        if volume_id != 0: #get numero for volume_id given\n            return Numero.objects.filter(volume=volume_id)\n        return Numero.objects.all().order_by('-number')\n    def get_permissions(self, active_perm=True):\n        if self.action in ['create', 'update', 'destroy'] and active_perm:\n            permission_classes = [IsAdminUser]",
         "detail": "review.views",
         "documentation": {}
     },

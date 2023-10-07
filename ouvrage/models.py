@@ -18,3 +18,5 @@ class Ouvrage(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     is_active = models.BooleanField(default=True)
     date_creation = models.DateTimeField(auto_now_add=True)
+    price = models.FloatField()
+    

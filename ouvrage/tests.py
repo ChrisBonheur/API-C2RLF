@@ -74,6 +74,7 @@ class OuvrageTest(APITestCase):
             'pdf_file': base64_file,
             'version': '3',
             'edition': 'Maison ref',
+            'price': 200
         }
         self.ouvrage = Ouvrage.objects.create(**self.ouvrage_data)
         self.authors = [
@@ -146,4 +147,8 @@ class OuvrageTest(APITestCase):
 
     def test_get_one_ouvrage(self):
         response = self.client.get(f"{self.uri}{self.ouvrage.id}/")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_filter(self):
+        response = self.client.post(f"{reverse_lazy('filter-ouvrage')}", data={})
         self.assertEqual(response.status_code, status.HTTP_200_OK)

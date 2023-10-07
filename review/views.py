@@ -37,8 +37,8 @@ class NumeroViewSet(ModelViewSet):
             return Numero.objects.filter(volume=volume_id)
         return Numero.objects.all().order_by('-number')
  
-    def get_permissions(self):
-        if self.action in ['create', 'update', 'destroy']:
+    def get_permissions(self, active_perm=True):
+        if self.action in ['create', 'update', 'destroy'] and active_perm:
             permission_classes = [IsAdminUser]
         else:
             permission_classes = []
@@ -49,6 +49,7 @@ class NumeroViewSet(ModelViewSet):
     )
     def filter_numero(self, request):
         self.permission_classes = []
+        self.get_permissions(False)
         self.check_permissions(request)
         filter_obj = {}
         #transform queryDict to json

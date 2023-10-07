@@ -307,7 +307,7 @@ class ArticleSerializerList(serializers.ModelSerializer):
     authors = ListUserAuthorSerializer()
     class Meta:
         model = Article
-        fields = ['id', 'date_ajout', 'date_accept', 'title_fr', 'date_publication', 'numero', 'page_begin', 'page_end', 'state', 'authors']
+        fields = "__all__"
 
     def to_representation(self, instance):
         data = super().to_representation(instance)

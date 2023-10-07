@@ -1,6 +1,6 @@
 from rest_framework import serializers, status
 from django.contrib.auth.models import User
-from author.serializers import ListUserAuthorSerializer, UserAuthorSerializer
+from author.serializers import ListUserAuthorSerializer, UserAuthorSerializer, UserListSerializer
 from review.serializers import Base64ToFieleField
 from ouvrage.models import Category
 from . models import Category, Ouvrage
@@ -56,9 +56,10 @@ class OuvrageSerializer(serializers.ModelSerializer):
         return ouvrage
 
 class OuvrageSerializerList(serializers.ModelSerializer):
+    author = UserListSerializer(many=True)
     class Meta:
         model = Ouvrage
-        fields = ["title", 'id', 'year_parution', 'version']
+        fields = ["title", 'id', 'year_parution', 'version', 'price', 'author']
 
 class OuvrageRetrieveSerializer(serializers.ModelSerializer):
     author = ListUserAuthorSerializer()
