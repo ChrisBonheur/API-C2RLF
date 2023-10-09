@@ -10,6 +10,7 @@ from .models import Author
 
 class UserAuthorSerializer(Serializer):
     username = serializers.CharField(max_length=50, required=False, allow_null=True, allow_blank=True)
+    id = serializers.IntegerField(required=False, allow_null=True)
     last_name = serializers.CharField(max_length=50)
     first_name = serializers.CharField(max_length=50)
     adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)
@@ -70,6 +71,13 @@ class UserAuthorSerializer(Serializer):
 
         #import pdb;pdb.set_trace();
         return user, author
+    
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        author = Author.objects.filter(user__id=data['id'])
+        if author.exists() and author[0].photo:
+            data['photo'] = author[0].photo.url
+        return data
 
 class AuthorSerializer(ModelSerializer):
     class Meta:

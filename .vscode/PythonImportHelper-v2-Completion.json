@@ -602,6 +602,24 @@
         "documentation": {}
     },
     {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
         "label": "PageNumberPagination",
         "importPath": "rest_framework.pagination",
         "description": "rest_framework.pagination",
@@ -642,6 +660,14 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -667,6 +693,22 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -995,15 +1037,6 @@
         "documentation": {}
     },
     {
-        "label": "base64",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "base64",
-        "description": "base64",
-        "detail": "base64",
-        "documentation": {}
-    },
-    {
         "label": "ModelSerializer",
         "importPath": "rest_framework.serializers",
         "description": "rest_framework.serializers",
@@ -1081,6 +1114,14 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "ContentFile",
+        "importPath": "django.core.files.base",
+        "description": "django.core.files.base",
+        "isExtraImport": true,
+        "detail": "django.core.files.base",
         "documentation": {}
     },
     {
@@ -1397,6 +1438,38 @@
         "documentation": {}
     },
     {
+        "label": "crop_image",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "edit_height_by_width",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
         "label": "ListUserAuthorSerializer",
         "importPath": "author.serializers",
         "description": "author.serializers",
@@ -1557,15 +1630,15 @@
         "documentation": {}
     },
     {
-        "label": "CustomPagination",
-        "importPath": "apiC2rlf.utils",
-        "description": "apiC2rlf.utils",
+        "label": "*",
+        "importPath": "apiC2rlf.enum",
+        "description": "apiC2rlf.enum",
         "isExtraImport": true,
-        "detail": "apiC2rlf.utils",
+        "detail": "apiC2rlf.enum",
         "documentation": {}
     },
     {
-        "label": "*",
+        "label": "ArticleState",
         "importPath": "apiC2rlf.enum",
         "description": "apiC2rlf.enum",
         "isExtraImport": true,
@@ -1921,7 +1994,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\n\"\"\"\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  ",
+        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  \n        'PASSWORD': 'hsbil8vqcABs',",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -1935,11 +2008,29 @@
         "documentation": {}
     },
     {
+        "label": "ISPRODUCTION",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "ISPRODUCTION = True\n\"\"\"\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nISPRODUCTION = False\n\"\"\"",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
         "label": "DATABASES",
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nISPRODUCTION = False\n\"\"\"\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators",
+        "detail": "apiC2rlf.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ISPRODUCTION",
+        "kind": 5,
+        "importPath": "apiC2rlf.settings",
+        "description": "apiC2rlf.settings",
+        "peekOfCode": "ISPRODUCTION = False\n\"\"\"\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -2119,7 +2210,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.urls",
         "description": "apiC2rlf.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/', include('author.urls')),\n    path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),\n    path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),\n    path('api/popular/article/', MostDownloadsArticle.as_view(), name='popular-article'),\n    path('api/ouvrage/filter/', OuvrageViewSet.as_view({'post': 'filter_ouvrage'}), name='filter-ouvrage'),\n    path('api/article/filter/', ArticleViewSet.as_view({'post': 'filter_article'}), name='filter-article'),\n    path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),\n    #path('api/article/', include('review.urls')),",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/', include('author.urls')),\n    path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),\n    path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),\n    path('api/popular/article/', MostDownloadsArticle.as_view(), name='popular-article'),\n    path('api/ouvrage/filter/', OuvrageViewSet.as_view({'post': 'filter_ouvrage'}), name='filter-ouvrage'),\n    path('api/article/filter/', ArticleViewSet.as_view({'post': 'filter_article'}), name='filter-article'),\n    path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),\n    path('api/sommaire/filter/', SommaireViewset.as_view({'post': 'filter_sommaires'}), name='sommaire-filter'),",
         "detail": "apiC2rlf.urls",
         "documentation": {}
     },
@@ -2128,7 +2219,25 @@
         "kind": 6,
         "importPath": "apiC2rlf.utils",
         "description": "apiC2rlf.utils",
-        "peekOfCode": "class CustomPagination(PageNumberPagination):\n    page_size = 1  # Nombre d'éléments par page\n    page_size_query_param = 'page_size'  # Paramètre pour spécifier le nombre d'éléments par page\n    max_page_size = 100  # Nombre maximal d'éléments par page",
+        "peekOfCode": "class CustomPagination(PageNumberPagination):\n    page_size = 1  # Nombre d'éléments par page\n    page_size_query_param = 'page_size'  # Paramètre pour spécifier le nombre d'éléments par page\n    max_page_size = 100  # Nombre maximal d'éléments par page\ndef crop_image(path_image, width, height):\n    try:\n        # Ouvrir l'image avec Pillow\n        image = Image.open(path_image)\n        # Obtenir les dimensions de l'image\n        img_width, img_height = image.size",
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "kind": 2,
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "peekOfCode": "def crop_image(path_image, width, height):\n    try:\n        # Ouvrir l'image avec Pillow\n        image = Image.open(path_image)\n        # Obtenir les dimensions de l'image\n        img_width, img_height = image.size\n        # Calculer les coordonnées du recadrage pour centrer l'image\n        left = (img_width - width) / 2\n        top = (img_height - height) / 2\n        right = (img_width + width) / 2",
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "edit_height_by_width",
+        "kind": 2,
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "peekOfCode": "def edit_height_by_width(path_file, width_min):\n    \"\"\"edit height of image by new width given\"\"\"\n    img = Image.open(path_file)\n    img = img.convert('RGB')\n    if img.width > width_min:\n        img_height = img.height\n        #get width image are depressed and we depressed this value from \n        #initial image height\n        percentage_remove_px = (100 * (img.width - width_min)) / img.width#percentage of removing px\n        output_height = (percentage_remove_px * img_height) / 100#get px to remove in height",
         "detail": "apiC2rlf.utils",
         "documentation": {}
     },
@@ -2191,7 +2300,7 @@
         "kind": 6,
         "importPath": "author.serializers",
         "description": "author.serializers",
-        "peekOfCode": "class UserAuthorSerializer(Serializer):\n    username = serializers.CharField(max_length=50, required=False, allow_null=True, allow_blank=True)\n    last_name = serializers.CharField(max_length=50)\n    first_name = serializers.CharField(max_length=50)\n    adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)\n    contact = serializers.CharField(max_length=25, required=False, allow_null=True, allow_blank=True)\n    institution = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)\n    aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)\n    email = serializers.EmailField()\n    password = serializers.CharField(required=False, allow_null=True, allow_blank=True, default='1234')",
+        "peekOfCode": "class UserAuthorSerializer(Serializer):\n    username = serializers.CharField(max_length=50, required=False, allow_null=True, allow_blank=True)\n    id = serializers.IntegerField(required=False, allow_null=True)\n    last_name = serializers.CharField(max_length=50)\n    first_name = serializers.CharField(max_length=50)\n    adress = serializers.CharField(max_length=100, required=False, allow_null=True, allow_blank=True)\n    contact = serializers.CharField(max_length=25, required=False, allow_null=True, allow_blank=True)\n    institution = serializers.CharField(max_length=100, allow_null=True, allow_blank=True)\n    aboutAuthor = serializers.CharField(max_length=255, required=False, allow_null=True, allow_blank=True)\n    email = serializers.EmailField()",
         "detail": "author.serializers",
         "documentation": {}
     },
@@ -2295,6 +2404,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "ouvrage.migrations.0003_ouvrage_cover_image_min",
+        "description": "ouvrage.migrations.0003_ouvrage_cover_image_min",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('ouvrage', '0002_ouvrage_price'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='ouvrage',\n            name='cover_image_min',\n            field=models.ImageField(blank=True, null=True, upload_to='ouvrage/cover/min'),\n        ),",
+        "detail": "ouvrage.migrations.0003_ouvrage_cover_image_min",
+        "documentation": {}
+    },
+    {
         "label": "OuvrageConfig",
         "kind": 6,
         "importPath": "ouvrage.apps",
@@ -2344,7 +2462,7 @@
         "kind": 6,
         "importPath": "ouvrage.serializers",
         "description": "ouvrage.serializers",
-        "peekOfCode": "class OuvrageSerializerList(serializers.ModelSerializer):\n    author = UserListSerializer(many=True)\n    class Meta:\n        model = Ouvrage\n        fields = [\"title\", 'id', 'year_parution', 'version', 'price', 'author']\nclass OuvrageRetrieveSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    user = UserAuthorSerializer()\n    class Meta:\n        model = Ouvrage",
+        "peekOfCode": "class OuvrageSerializerList(serializers.ModelSerializer):\n    author = UserListSerializer(many=True)\n    class Meta:\n        model = Ouvrage\n        fields = [\"title\", 'id', 'year_parution', 'version', 'price', 'author', 'cover_image_min']\nclass OuvrageRetrieveSerializer(serializers.ModelSerializer):\n    author = ListUserAuthorSerializer()\n    user = UserAuthorSerializer()\n    class Meta:\n        model = Ouvrage",
         "detail": "ouvrage.serializers",
         "documentation": {}
     },
@@ -2677,7 +2795,7 @@
         "kind": 6,
         "importPath": "review.serializers",
         "description": "review.serializers",
-        "peekOfCode": "class SommaireSerializerList(serializers.ModelSerializer):\n    class Meta:\n        model = Sommaire\n        fields = '__all__'\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        data['numero_ordre'] = instance.numero.number\n        return data\nclass TypeSourceSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "peekOfCode": "class SommaireSerializerList(serializers.ModelSerializer):\n    author = UserAuthorSerializer(many=True)\n    class Meta:\n        model = Sommaire\n        fields = '__all__'\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        data['numero_ordre'] = instance.numero.number\n        return data\nclass TypeSourceSerializer(serializers.ModelSerializer):",
         "detail": "review.serializers",
         "documentation": {}
     },

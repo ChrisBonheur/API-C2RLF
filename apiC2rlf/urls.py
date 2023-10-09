@@ -62,6 +62,8 @@ urlpatterns = [
 
     path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),
 
+    path('api/sommaire/filter/', SommaireViewset.as_view({'post': 'filter_sommaires'}), name='sommaire-filter'),
+
     #path('api/article/', include('review.urls')),
     path('api/volume-numero/', NumeroViewSet.as_view({'get': 'get_numero_with_volume'}), name='volume-numero'),
 

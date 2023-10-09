@@ -157,7 +157,7 @@ class SommaireSerializer(serializers.ModelSerializer):
     
 
 class SommaireSerializerList(serializers.ModelSerializer):
-
+    author = UserAuthorSerializer(many=True)
     class Meta:
         model = Sommaire
         fields = '__all__'

@@ -5,6 +5,8 @@ from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly, IsAuthenticated
+
+from apiC2rlf.utils import CustomPagination
 from .serializers import VolumeSerializer, NumeroSerializer, SommaireSerializer, NumeroSerializerList, SommaireSerializerList, TypeSourceSerializer, SourceSerializer, ArticleSerializer, ArticleSerializerList, ArticleSerializerViewOne, statisitiqueSerializer
 from drf_yasg.utils import swagger_auto_schema
 from .models import Volume, Numero, Sommaire, TypeSource, Source, Article
@@ -84,6 +86,29 @@ class SommaireViewset(ModelViewSet):
         self.permission_classes = [IsAdminUser]
         self.check_permissions(request)
         return super().destroy(request, *args, **kwargs)
+    
+    def filter_sommaires(self, request):
+        self.permission_classes = []
+        self.check_permissions(request)
+        self.pagination_class = CustomPagination
+
+        limit = request.GET.get('limit')
+        filter_obj = {} 
+        #transform queryDict to json
+        for key, value in request.data.items():
+            filter_obj[key] = value
+
+        if limit:
+            self.pagination_class.page_size = limit        
+        sommaires = Sommaire.objects.filter(**filter_obj).order_by('-numero__number')
+        page = self.paginate_queryset(sommaires)
+
+        if page is not None:
+            serializer = SommaireSerializerList(page, many=True)
+            return self.get_paginated_response(serializer.data)  
+        serializer = SommaireSerializerList(sommaires, many=True)
+        return Response(serializer.data)
+        
 
 @swagger_auto_schema(
     responses={200: SommaireSerializer}

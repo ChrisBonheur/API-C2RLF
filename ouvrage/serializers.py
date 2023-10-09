@@ -55,11 +55,12 @@ class OuvrageSerializer(serializers.ModelSerializer):
             ouvrage.author.add(user)
         return ouvrage
 
+
 class OuvrageSerializerList(serializers.ModelSerializer):
     author = UserListSerializer(many=True)
     class Meta:
         model = Ouvrage
-        fields = ["title", 'id', 'year_parution', 'version', 'price', 'author']
+        fields = ["title", 'id', 'year_parution', 'version', 'price', 'author', 'cover_image_min']
 
 class OuvrageRetrieveSerializer(serializers.ModelSerializer):
     author = ListUserAuthorSerializer()

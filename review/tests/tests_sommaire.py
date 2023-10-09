@@ -1,3 +1,4 @@
+from apiC2rlf.enum import ArticleState
 from rest_framework.test import APITestCase
 from django.urls import reverse_lazy
 from rest_framework import status
@@ -137,5 +138,9 @@ class TestSommaire(APITestCase):
         self.client.force_authenticate(self.superuser)
         response = self.client.delete(f"{self.URI}{self.sommaire.id}/")
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+
+    def test_filter(self):
+        response = self.client.post(reverse_lazy('sommaire-filter'), {})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         
 
