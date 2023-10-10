@@ -75,8 +75,12 @@ class UserAuthorSerializer(Serializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
         author = Author.objects.filter(user__id=data['id'])
-        if author.exists() and author[0].photo:
+        if author.exists() and author[0].photo and not self.context.get('is_create_or_update'):
             data['photo'] = author[0].photo.url
+            data['adress'] = author[0].adress
+            data['contact'] = author[0].contact
+            data['institution'] = author[0].institution
+            data['aboutAuthor'] = author[0].aboutAuthor
         return data
 
 class AuthorSerializer(ModelSerializer):

@@ -6,6 +6,8 @@ from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 import os
 
+from apiC2rlf.utils import edit_height_by_width
+
 class Volume(models.Model):
     number = models.PositiveSmallIntegerField()
     datecreation = models.DateTimeField(auto_now_add=True)
@@ -35,6 +37,8 @@ class Sommaire(models.Model):
     def save(self, *args, **kwargs) -> None:
         self.label = f"sommaire lié au numero {self.numero.number}"
         super(Sommaire, self).save(*args, **kwargs)
+        if self.picture:
+            edit_height_by_width(self.picture.path, 400)
 
 class TypeSource(models.Model):
     type_name = models.CharField(max_length=50)
@@ -88,9 +92,9 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 @receiver(post_delete, sender=Article)
 def post_delete_receiver(sender, instance, **kwargs):
     if instance.file_submit:
-        res = os.system(f"rm media/{instance.file_submit}")
+        res = os.system(f"rm media/{instance.file_submit.path}")
     if instance.pdf_file:
-        os.system(f"rm media/{instance.pdf_file}")
+        os.system(f"rm media/{instance.pdf_file.path}")
 
 """
 @receiver(pre_save, sender=Article)

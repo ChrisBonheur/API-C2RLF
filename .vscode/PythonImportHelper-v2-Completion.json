@@ -869,6 +869,14 @@
         "documentation": {}
     },
     {
+        "label": "pre_save",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
         "label": "post_delete",
         "importPath": "django.db.models.signals",
         "description": "django.db.models.signals",
@@ -898,6 +906,46 @@
         "description": "django.dispatch",
         "isExtraImport": true,
         "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "edit_height_by_width",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
         "documentation": {}
     },
     {
@@ -1438,38 +1486,6 @@
         "documentation": {}
     },
     {
-        "label": "crop_image",
-        "importPath": "apiC2rlf.utils",
-        "description": "apiC2rlf.utils",
-        "isExtraImport": true,
-        "detail": "apiC2rlf.utils",
-        "documentation": {}
-    },
-    {
-        "label": "edit_height_by_width",
-        "importPath": "apiC2rlf.utils",
-        "description": "apiC2rlf.utils",
-        "isExtraImport": true,
-        "detail": "apiC2rlf.utils",
-        "documentation": {}
-    },
-    {
-        "label": "CustomPagination",
-        "importPath": "apiC2rlf.utils",
-        "description": "apiC2rlf.utils",
-        "isExtraImport": true,
-        "detail": "apiC2rlf.utils",
-        "documentation": {}
-    },
-    {
-        "label": "CustomPagination",
-        "importPath": "apiC2rlf.utils",
-        "description": "apiC2rlf.utils",
-        "isExtraImport": true,
-        "detail": "apiC2rlf.utils",
-        "documentation": {}
-    },
-    {
         "label": "ListUserAuthorSerializer",
         "importPath": "author.serializers",
         "description": "author.serializers",
@@ -1994,7 +2010,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  \n        'PASSWORD': 'hsbil8vqcABs',",
+        "peekOfCode": "WSGI_APPLICATION = 'apiC2rlf.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/3.2/ref/settings/#databases\n#if os.environ.get('ENV') == 'PRODUCTION':\n\"\"\"\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'cp2163363p23_c2rlf',   \n        'USER': 'cp2163363p23_bonheur',  ",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -2012,7 +2028,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "ISPRODUCTION = True\n\"\"\"\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nISPRODUCTION = False\n\"\"\"",
+        "peekOfCode": "ISPRODUCTION = True\n\"\"\"\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nISPRODUCTION = False\n# Password validation",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -2021,7 +2037,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nISPRODUCTION = False\n\"\"\"\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nISPRODUCTION = False\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -2030,7 +2046,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.settings",
         "description": "apiC2rlf.settings",
-        "peekOfCode": "ISPRODUCTION = False\n\"\"\"\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',",
+        "peekOfCode": "ISPRODUCTION = False\n# Password validation\n# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },",
         "detail": "apiC2rlf.settings",
         "documentation": {}
     },
@@ -2282,16 +2298,16 @@
         "kind": 6,
         "importPath": "author.models",
         "description": "author.models",
-        "peekOfCode": "class Author(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='author')\n    adress = models.CharField(max_length=255, null=True, blank=True)\n    contact = models.CharField(max_length=30, null=True, blank=True)\n    institution = models.CharField(max_length=100)\n    aboutAuthor = models.CharField(max_length=255, null=True, blank=True)\n    photo = models.ImageField(null=True, blank=True, upload_to=\"pictures/avatars\")\n@receiver(post_save, sender=Author)\ndef post_delete_receiver(sender, instance, **kwargs):\n    pass",
+        "peekOfCode": "class Author(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='author')\n    adress = models.CharField(max_length=255, null=True, blank=True)\n    contact = models.CharField(max_length=30, null=True, blank=True)\n    institution = models.CharField(max_length=100)\n    aboutAuthor = models.CharField(max_length=255, null=True, blank=True)\n    photo = models.ImageField(null=True, blank=True, upload_to=\"pictures/avatars\")\n    def save(self, *args, **kwargs):\n        super().save(*args, **kwargs)\n        if self.photo:",
         "detail": "author.models",
         "documentation": {}
     },
     {
-        "label": "post_delete_receiver",
+        "label": "post_save_receiver",
         "kind": 2,
         "importPath": "author.models",
         "description": "author.models",
-        "peekOfCode": "def post_delete_receiver(sender, instance, **kwargs):\n    pass",
+        "peekOfCode": "def post_save_receiver(sender, instance, **kwargs):\n    import pdb;pdb.set_trace()\n    if instance.photo:\n        system(f'rm {instance.photo.url}')",
         "detail": "author.models",
         "documentation": {}
     },

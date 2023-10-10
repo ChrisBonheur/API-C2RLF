@@ -48,7 +48,7 @@ class AuthorAPIView(APIView):
         responses={200: UserSerializer}
     )
     def post(self, request):
-        authorSerializer = UserAuthorSerializer(data=request.data)
+        authorSerializer = UserAuthorSerializer(data=request.data, context={'is_create_or_update': True})
 
         if authorSerializer.is_valid():
             user, author = authorSerializer.create(authorSerializer.data)
@@ -61,7 +61,7 @@ class AuthorAPIView(APIView):
         responses={200: UserSerializer}
     )
     def put(self, request, id_user: int):
-        authorSerializer = UserAuthorSerializer(data=request.data)
+        authorSerializer = UserAuthorSerializer(data=request.data, context={'is_create_or_update': True})
         self.permission_classes = [IsAuthenticated]
         self.check_permissions(request)
         if(not request.user.is_superuser and request.user.id != id_user):
