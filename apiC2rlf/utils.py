@@ -4,9 +4,10 @@ import os
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from PIL import Image
+import json
 
 class CustomPagination(PageNumberPagination):
-    page_size = 1  # Nombre d'éléments par page
+    page_size = 20  # Nombre d'éléments par page
     page_size_query_param = 'page_size'  # Paramètre pour spécifier le nombre d'éléments par page
     max_page_size = 100  # Nombre maximal d'éléments par page
 
@@ -53,3 +54,6 @@ def edit_height_by_width(path_file, width_min):
         
         #save output image
         img.save(path_file)
+
+def decode_response_to_json(response):
+    return json.loads(response.content.decode('utf-8'))

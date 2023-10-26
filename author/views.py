@@ -11,7 +11,7 @@ from django.db.utils import IntegrityError
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from drf_yasg.utils import swagger_auto_schema
 
-from .serializers import UserSerializer, UserAuthorSerializer, UserListSerializer
+from .serializers import UserSerializer, UserAuthorSerializer, UserListSerializer, ChangePasswordSerializer 
 from .models import Author
 from django.core.exceptions import PermissionDenied
 
@@ -73,6 +73,20 @@ class AuthorAPIView(APIView):
         print(authorSerializer.errors)
 
         return Response(authorSerializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @swagger_auto_schema(
+        request_body= ChangePasswordSerializer
+    )
+    def patch(self, request, *args, **kwargs):
+        self.permission_classes = [IsAuthenticated]
+        self.check_permissions(request=request)
+        user = request.user
+        serializer = ChangePasswordSerializer(data=request.data, context={'user': user})
+        if serializer.is_valid():
+            serializer.change_password(serializer.data)
+        return Response({})
+
+
 
 """
 class UserAPIView(APIView):

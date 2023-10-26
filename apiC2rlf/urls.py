@@ -13,6 +13,7 @@ from review.views import VolumeViewSet, NumeroViewSet, SommaireViewset, Sommaire
 
 from pageContent.views import *
 from ouvrage.views import OuvrageViewSet, CategoryViewSet
+from cours.views import LevelViewSet, CourseViewSet
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -44,6 +45,8 @@ router.register('article-list', ArticleListView, basename='articles_list')
 
 router.register('ouvrage', OuvrageViewSet, basename='ouvrage')
 router.register('category-ouvrage', CategoryViewSet, basename='category-ouvrage')
+router.register('course', CourseViewSet, basename='course')
+router.register('level', LevelViewSet, basename='level')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -59,6 +62,8 @@ urlpatterns = [
     path('api/ouvrage/filter/', OuvrageViewSet.as_view({'post': 'filter_ouvrage'}), name='filter-ouvrage'),
 
     path('api/article/filter/', ArticleViewSet.as_view({'post': 'filter_article'}), name='filter-article'),
+
+    path('api/cours/filter/', CourseViewSet.as_view({'post': 'filter_cours'}), name='filter_course'),
 
     path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),
 

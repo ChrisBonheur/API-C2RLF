@@ -102,3 +102,18 @@ class UserSerializer(ModelSerializer):
 
 class ListUserAuthorSerializer(serializers.ListSerializer):
     child = UserAuthorSerializer()
+
+
+class ChangePasswordSerializer(Serializer):
+    old_password = serializers.CharField()
+    new_password = serializers.CharField()
+
+    def change_password(self, validate_data):
+        user = User.objects.get(pk=self.context['user'].id)
+        old_pswd, new_pswd = validate_data.values()
+        if user.check_password(old_pswd):
+            user.set_password(new_pswd)
+            user.save()
+        else:
+            raise serializers.ValidationError(f"L'ancien mot de passe renseigné n'est pas correct!.")
+        return True

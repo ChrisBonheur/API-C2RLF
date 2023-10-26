@@ -186,6 +186,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -291,6 +299,22 @@
     },
     {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -474,6 +498,30 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "static",
         "importPath": "django.conf.urls.static",
         "description": "django.conf.urls.static",
@@ -602,6 +650,22 @@
         "documentation": {}
     },
     {
+        "label": "LevelViewSet",
+        "importPath": "cours.views",
+        "description": "cours.views",
+        "isExtraImport": true,
+        "detail": "cours.views",
+        "documentation": {}
+    },
+    {
+        "label": "CourseViewSet",
+        "importPath": "cours.views",
+        "description": "cours.views",
+        "isExtraImport": true,
+        "detail": "cours.views",
+        "documentation": {}
+    },
+    {
         "label": "base64",
         "kind": 6,
         "isExtraImport": true,
@@ -660,11 +724,28 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "Image",
         "importPath": "PIL",
         "description": "PIL",
         "isExtraImport": true,
         "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -685,6 +766,54 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -933,7 +1062,7 @@
         "documentation": {}
     },
     {
-        "label": "CustomPagination",
+        "label": "decode_response_to_json",
         "importPath": "apiC2rlf.utils",
         "description": "apiC2rlf.utils",
         "isExtraImport": true,
@@ -946,6 +1075,70 @@
         "description": "apiC2rlf.utils",
         "isExtraImport": true,
         "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "crop_image",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "edit_height_by_width",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "edit_height_by_width",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CustomPagination",
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "isExtraImport": true,
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -1133,14 +1326,6 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
         "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -1277,20 +1462,19 @@
         "documentation": {}
     },
     {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
         "label": "SimpleUploadedFile",
         "importPath": "django.core.files.uploadedfile",
         "description": "django.core.files.uploadedfile",
         "isExtraImport": true,
         "detail": "django.core.files.uploadedfile",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -1422,6 +1606,14 @@
         "documentation": {}
     },
     {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "IsAuthenticatedOrReadOnly",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -1462,6 +1654,14 @@
         "documentation": {}
     },
     {
+        "label": "swagger_auto_schema",
+        "importPath": "drf_yasg.utils",
+        "description": "drf_yasg.utils",
+        "isExtraImport": true,
+        "detail": "drf_yasg.utils",
+        "documentation": {}
+    },
+    {
         "label": "PermissionDenied",
         "importPath": "django.core.exceptions",
         "description": "django.core.exceptions",
@@ -1470,19 +1670,35 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "Base64ToFieleField",
+        "importPath": "review.serializers",
+        "description": "review.serializers",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "review.serializers",
         "documentation": {}
     },
     {
-        "label": "override_settings",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "Base64ToFieleField",
+        "importPath": "review.serializers",
+        "description": "review.serializers",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Base64ToFieleField",
+        "importPath": "review.serializers",
+        "description": "review.serializers",
+        "isExtraImport": true,
+        "detail": "review.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserAuthorSerializer",
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "isExtraImport": true,
+        "detail": "author.serializers",
         "documentation": {}
     },
     {
@@ -1534,19 +1750,115 @@
         "documentation": {}
     },
     {
-        "label": "Base64ToFieleField",
-        "importPath": "review.serializers",
-        "description": "review.serializers",
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
         "isExtraImport": true,
-        "detail": "review.serializers",
+        "detail": "author.base64_for_test",
         "documentation": {}
     },
     {
-        "label": "Base64ToFieleField",
-        "importPath": "review.serializers",
-        "description": "review.serializers",
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
         "isExtraImport": true,
-        "detail": "review.serializers",
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "base64_file",
+        "importPath": "author.base64_for_test",
+        "description": "author.base64_for_test",
+        "isExtraImport": true,
+        "detail": "author.base64_for_test",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ReadOnlyModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "ReadOnlyModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
         "documentation": {}
     },
     {
@@ -1571,78 +1883,6 @@
         "description": "ouvrage.models",
         "isExtraImport": true,
         "detail": "ouvrage.models",
-        "documentation": {}
-    },
-    {
-        "label": "base64_file",
-        "importPath": "author.base64_for_test",
-        "description": "author.base64_for_test",
-        "isExtraImport": true,
-        "detail": "author.base64_for_test",
-        "documentation": {}
-    },
-    {
-        "label": "base64_file",
-        "importPath": "author.base64_for_test",
-        "description": "author.base64_for_test",
-        "isExtraImport": true,
-        "detail": "author.base64_for_test",
-        "documentation": {}
-    },
-    {
-        "label": "base64_file",
-        "importPath": "author.base64_for_test",
-        "description": "author.base64_for_test",
-        "isExtraImport": true,
-        "detail": "author.base64_for_test",
-        "documentation": {}
-    },
-    {
-        "label": "base64_file",
-        "importPath": "author.base64_for_test",
-        "description": "author.base64_for_test",
-        "isExtraImport": true,
-        "detail": "author.base64_for_test",
-        "documentation": {}
-    },
-    {
-        "label": "ModelViewSet",
-        "importPath": "rest_framework.viewsets",
-        "description": "rest_framework.viewsets",
-        "isExtraImport": true,
-        "detail": "rest_framework.viewsets",
-        "documentation": {}
-    },
-    {
-        "label": "ReadOnlyModelViewSet",
-        "importPath": "rest_framework.viewsets",
-        "description": "rest_framework.viewsets",
-        "isExtraImport": true,
-        "detail": "rest_framework.viewsets",
-        "documentation": {}
-    },
-    {
-        "label": "ModelViewSet",
-        "importPath": "rest_framework.viewsets",
-        "description": "rest_framework.viewsets",
-        "isExtraImport": true,
-        "detail": "rest_framework.viewsets",
-        "documentation": {}
-    },
-    {
-        "label": "ModelViewSet",
-        "importPath": "rest_framework.viewsets",
-        "description": "rest_framework.viewsets",
-        "isExtraImport": true,
-        "detail": "rest_framework.viewsets",
-        "documentation": {}
-    },
-    {
-        "label": "ReadOnlyModelViewSet",
-        "importPath": "rest_framework.viewsets",
-        "description": "rest_framework.viewsets",
-        "isExtraImport": true,
-        "detail": "rest_framework.viewsets",
         "documentation": {}
     },
     {
@@ -1838,14 +2078,6 @@
         "documentation": {}
     },
     {
-        "label": "UniqueConstraint",
-        "importPath": "django.db.models",
-        "description": "django.db.models",
-        "isExtraImport": true,
-        "detail": "django.db.models",
-        "documentation": {}
-    },
-    {
         "label": "uuid",
         "kind": 6,
         "isExtraImport": true,
@@ -1860,6 +2092,14 @@
         "description": "rest_framework.fields",
         "isExtraImport": true,
         "detail": "rest_framework.fields",
+        "documentation": {}
+    },
+    {
+        "label": "override_settings",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -2226,7 +2466,7 @@
         "kind": 5,
         "importPath": "apiC2rlf.urls",
         "description": "apiC2rlf.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/', include('author.urls')),\n    path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),\n    path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),\n    path('api/popular/article/', MostDownloadsArticle.as_view(), name='popular-article'),\n    path('api/ouvrage/filter/', OuvrageViewSet.as_view({'post': 'filter_ouvrage'}), name='filter-ouvrage'),\n    path('api/article/filter/', ArticleViewSet.as_view({'post': 'filter_article'}), name='filter-article'),\n    path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),\n    path('api/sommaire/filter/', SommaireViewset.as_view({'post': 'filter_sommaires'}), name='sommaire-filter'),",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/', include('author.urls')),\n    path('api/valide/article/<int:pk>/', ValidSubmitArticle.as_view(), name='validate-article'),\n    path('api/publication/article/<int:pk>/', PublicationtArticle.as_view(), name='publication-article'),\n    path('api/popular/article/', MostDownloadsArticle.as_view(), name='popular-article'),\n    path('api/ouvrage/filter/', OuvrageViewSet.as_view({'post': 'filter_ouvrage'}), name='filter-ouvrage'),\n    path('api/article/filter/', ArticleViewSet.as_view({'post': 'filter_article'}), name='filter-article'),\n    path('api/cours/filter/', CourseViewSet.as_view({'post': 'filter_cours'}), name='filter_course'),\n    path('api/numero/filter/', NumeroViewSet.as_view({'post': 'filter_numero'}), name='numero-filter'),",
         "detail": "apiC2rlf.urls",
         "documentation": {}
     },
@@ -2235,7 +2475,7 @@
         "kind": 6,
         "importPath": "apiC2rlf.utils",
         "description": "apiC2rlf.utils",
-        "peekOfCode": "class CustomPagination(PageNumberPagination):\n    page_size = 1  # Nombre d'éléments par page\n    page_size_query_param = 'page_size'  # Paramètre pour spécifier le nombre d'éléments par page\n    max_page_size = 100  # Nombre maximal d'éléments par page\ndef crop_image(path_image, width, height):\n    try:\n        # Ouvrir l'image avec Pillow\n        image = Image.open(path_image)\n        # Obtenir les dimensions de l'image\n        img_width, img_height = image.size",
+        "peekOfCode": "class CustomPagination(PageNumberPagination):\n    page_size = 20  # Nombre d'éléments par page\n    page_size_query_param = 'page_size'  # Paramètre pour spécifier le nombre d'éléments par page\n    max_page_size = 100  # Nombre maximal d'éléments par page\ndef crop_image(path_image, width, height):\n    try:\n        # Ouvrir l'image avec Pillow\n        image = Image.open(path_image)\n        # Obtenir les dimensions de l'image\n        img_width, img_height = image.size",
         "detail": "apiC2rlf.utils",
         "documentation": {}
     },
@@ -2254,6 +2494,15 @@
         "importPath": "apiC2rlf.utils",
         "description": "apiC2rlf.utils",
         "peekOfCode": "def edit_height_by_width(path_file, width_min):\n    \"\"\"edit height of image by new width given\"\"\"\n    img = Image.open(path_file)\n    img = img.convert('RGB')\n    if img.width > width_min:\n        img_height = img.height\n        #get width image are depressed and we depressed this value from \n        #initial image height\n        percentage_remove_px = (100 * (img.width - width_min)) / img.width#percentage of removing px\n        output_height = (percentage_remove_px * img_height) / 100#get px to remove in height",
+        "detail": "apiC2rlf.utils",
+        "documentation": {}
+    },
+    {
+        "label": "decode_response_to_json",
+        "kind": 2,
+        "importPath": "apiC2rlf.utils",
+        "description": "apiC2rlf.utils",
+        "peekOfCode": "def decode_response_to_json(response):\n    return json.loads(response.content.decode('utf-8'))",
         "detail": "apiC2rlf.utils",
         "documentation": {}
     },
@@ -2307,7 +2556,7 @@
         "kind": 2,
         "importPath": "author.models",
         "description": "author.models",
-        "peekOfCode": "def post_save_receiver(sender, instance, **kwargs):\n    import pdb;pdb.set_trace()\n    if instance.photo:\n        system(f'rm {instance.photo.url}')",
+        "peekOfCode": "def post_save_receiver(sender, instance, **kwargs):\n    if instance.photo:\n        system(f'rm {instance.photo.url}')",
         "detail": "author.models",
         "documentation": {}
     },
@@ -2343,7 +2592,7 @@
         "kind": 6,
         "importPath": "author.serializers",
         "description": "author.serializers",
-        "peekOfCode": "class UserSerializer(ModelSerializer):\n    author = AuthorSerializer()\n    class Meta:\n        model = User\n        fields = '__all__'\nclass ListUserAuthorSerializer(serializers.ListSerializer):\n    child = UserAuthorSerializer()",
+        "peekOfCode": "class UserSerializer(ModelSerializer):\n    author = AuthorSerializer()\n    class Meta:\n        model = User\n        fields = '__all__'\nclass ListUserAuthorSerializer(serializers.ListSerializer):\n    child = UserAuthorSerializer()\nclass ChangePasswordSerializer(Serializer):\n    old_password = serializers.CharField()\n    new_password = serializers.CharField()",
         "detail": "author.serializers",
         "documentation": {}
     },
@@ -2352,7 +2601,16 @@
         "kind": 6,
         "importPath": "author.serializers",
         "description": "author.serializers",
-        "peekOfCode": "class ListUserAuthorSerializer(serializers.ListSerializer):\n    child = UserAuthorSerializer()",
+        "peekOfCode": "class ListUserAuthorSerializer(serializers.ListSerializer):\n    child = UserAuthorSerializer()\nclass ChangePasswordSerializer(Serializer):\n    old_password = serializers.CharField()\n    new_password = serializers.CharField()\n    def change_password(self, validate_data):\n        user = User.objects.get(pk=self.context['user'].id)\n        old_pswd, new_pswd = validate_data.values()\n        if user.check_password(old_pswd):\n            user.set_password(new_pswd)",
+        "detail": "author.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ChangePasswordSerializer",
+        "kind": 6,
+        "importPath": "author.serializers",
+        "description": "author.serializers",
+        "peekOfCode": "class ChangePasswordSerializer(Serializer):\n    old_password = serializers.CharField()\n    new_password = serializers.CharField()\n    def change_password(self, validate_data):\n        user = User.objects.get(pk=self.context['user'].id)\n        old_pswd, new_pswd = validate_data.values()\n        if user.check_password(old_pswd):\n            user.set_password(new_pswd)\n            user.save()\n        else:",
         "detail": "author.serializers",
         "documentation": {}
     },
@@ -2361,7 +2619,7 @@
         "kind": 6,
         "importPath": "author.tests",
         "description": "author.tests",
-        "peekOfCode": "class TestAuthor(APITestCase):\n    uri = 'author'\n    def setUp(self) -> None:\n        self.factory = APIRequestFactory()\n        self.user = User.objects.create_user(email='bonheur@gmail.com', password='1234', username='bonheur')\n        self.author = Author.objects.create(\n            adress='102 rue de test',\n            contact='068314433',\n            institution='dev',\n            aboutAuthor='me and me',",
+        "peekOfCode": "class TestAuthor(APITestCase):\n    uri = 'author'\n    def setUp(self) -> None:\n        self.factory = APIRequestFactory()\n        self.password = '1234'\n        self.user = User.objects.create_user(email='bonheur@gmail.com', password=self.password, username='bonheur')\n        self.author = Author.objects.create(\n            adress='102 rue de test',\n            contact='068314433',\n            institution='dev',",
         "detail": "author.tests",
         "documentation": {}
     },
@@ -2393,12 +2651,138 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cours.migrations.0001_initial",
+        "description": "cours.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Level',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "cours.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cours.migrations.0002_course_user",
+        "description": "cours.migrations.0002_course_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('cours', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='course',\n            name='user',\n            field=models.OneToOneField(null=True, on_delete=django.db.models.deletion.SET_NULL, to=settings.AUTH_USER_MODEL),",
+        "detail": "cours.migrations.0002_course_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cours.migrations.0003_auto_20231014_1408",
+        "description": "cours.migrations.0003_auto_20231014_1408",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('cours', '0002_course_user'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='course',\n            name='level',\n            field=models.ManyToManyField(related_name='courses', to='cours.Level', verbose_name='niveau'),",
+        "detail": "cours.migrations.0003_auto_20231014_1408",
+        "documentation": {}
+    },
+    {
         "label": "CoursConfig",
         "kind": 6,
         "importPath": "cours.apps",
         "description": "cours.apps",
         "peekOfCode": "class CoursConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'cours'",
         "detail": "cours.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Level",
+        "kind": 6,
+        "importPath": "cours.models",
+        "description": "cours.models",
+        "peekOfCode": "class Level(models.Model):\n    label = models.CharField(max_length=255, unique=True, error_messages={\n        'unique': 'Un niveau avec ce libellé existe déjà'\n    })\n    code = models.CharField(max_length=10, unique=True, error_messages={\n        'unique': 'Un niveau avec ce code existe déjà'\n    })\n    order = models.SmallIntegerField(verbose_name='ordre')\nclass Course(models.Model):\n    title = models.CharField(max_length=255, verbose_name='titre')",
+        "detail": "cours.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "kind": 6,
+        "importPath": "cours.models",
+        "description": "cours.models",
+        "peekOfCode": "class Course(models.Model):\n    title = models.CharField(max_length=255, verbose_name='titre')\n    presentation = models.TextField()\n    level = models.ManyToManyField(Level, related_name='courses', verbose_name='niveau')\n    authors = models.ManyToManyField(User, related_name='courses')\n    cover_image = models.ImageField(upload_to='course/cover', null=True, blank=True)\n    cover_image_min = models.ImageField(upload_to='course/cover/min', null=True, blank=True)\n    pdf_file = models.FileField(upload_to='course/pdf')\n    is_public = models.BooleanField(default=True)\n    date_creation = models.DateTimeField(auto_now_add=True)",
+        "detail": "cours.models",
+        "documentation": {}
+    },
+    {
+        "label": "LevelSerializer",
+        "kind": 6,
+        "importPath": "cours.serializers",
+        "description": "cours.serializers",
+        "peekOfCode": "class LevelSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Level\n        fields = \"__all__\"\nclass CourCreateOrUpdateSerializer(serializers.ModelSerializer):\n    cover_image = Base64ToFieleField(required=False, allow_null=True)\n    pdf_file = Base64ToFieleField()\n    authors = UserAuthorSerializer(many=True)\n    class Meta:\n        model = Course",
+        "detail": "cours.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourCreateOrUpdateSerializer",
+        "kind": 6,
+        "importPath": "cours.serializers",
+        "description": "cours.serializers",
+        "peekOfCode": "class CourCreateOrUpdateSerializer(serializers.ModelSerializer):\n    cover_image = Base64ToFieleField(required=False, allow_null=True)\n    pdf_file = Base64ToFieleField()\n    authors = UserAuthorSerializer(many=True)\n    class Meta:\n        model = Course\n        exclude = ['date_creation', 'cover_image_min']\n    def create(self, validated_data):\n        authors = validated_data.pop('authors', None)\n        validated_data['user'] = self.context['request'].user",
+        "detail": "cours.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourseListSerializer",
+        "kind": 6,
+        "importPath": "cours.serializers",
+        "description": "cours.serializers",
+        "peekOfCode": "class CourseListSerializer(serializers.ModelSerializer):\n    authors = UserAuthorSerializer(many=True)\n    class Meta:\n        model = Course\n        fields = ['title', 'cover_image_min', 'date_creation', 'cover_image_min', 'id', 'authors', 'presentation', 'date_creation']\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        request = self.context.get('request')\n        if instance.level:\n            data['level_codes'] = ', '.join([f'{level.code}' for level in instance.level.all()])",
+        "detail": "cours.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourseRetrieveSerializer",
+        "kind": 6,
+        "importPath": "cours.serializers",
+        "description": "cours.serializers",
+        "peekOfCode": "class CourseRetrieveSerializer(serializers.ModelSerializer):\n    authors = UserAuthorSerializer(many=True)\n    class Meta:\n        model = Course\n        fields = \"__all__\"\n    def to_representation(self, instance):\n        data = super().to_representation(instance)\n        if instance.level:\n            data['level_codes'] = ', '.join([f'{level.label}' for level in instance.level.all()])\n            data['level_retrieve'] = LevelSerializer(instance.level.all(), many=True).data",
+        "detail": "cours.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourseFilterSerializer",
+        "kind": 6,
+        "importPath": "cours.serializers",
+        "description": "cours.serializers",
+        "peekOfCode": "class CourseFilterSerializer(serializers.ModelSerializer):\n    levels_id = serializers.IntegerField(required=False, allow_null=True)",
+        "detail": "cours.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "LevelTest",
+        "kind": 6,
+        "importPath": "cours.tests",
+        "description": "cours.tests",
+        "peekOfCode": "class LevelTest(APITestCase):\n    url = reverse_lazy('level-list')\n    def setUp(self):\n        self.user = User.objects.create_user(username='bonheur', email='bonheur@gmail.com', password='1234')\n        self.superuser = User.objects.create_superuser(username='chris', email='chris@gmail.com', password='1234')\n        self.level_data = {\n            'label': 'Licence',\n            'code': 'LC',\n            'order': 1\n        }",
+        "detail": "cours.tests",
+        "documentation": {}
+    },
+    {
+        "label": "CourseTestCase",
+        "kind": 6,
+        "importPath": "cours.tests",
+        "description": "cours.tests",
+        "peekOfCode": "class CourseTestCase(APITestCase):\n    url = reverse_lazy('course-list')\n    def setUp(self):\n        self.user = User.objects.create_user(username='bonheur', email='bonheur@gmail.com', password='1234')\n        self.superuser = User.objects.create_superuser(username='chris', email='chris@gmail.com', password='1234')\n        self.level_data = {\n            'label': 'Licence',\n            'code': 'LC',\n            'order': 1\n        }",
+        "detail": "cours.tests",
+        "documentation": {}
+    },
+    {
+        "label": "LevelViewSet",
+        "kind": 6,
+        "importPath": "cours.views",
+        "description": "cours.views",
+        "peekOfCode": "class LevelViewSet(ModelViewSet):\n    serializer_class = LevelSerializer\n    queryset = Level.objects.all().order_by('order')\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:\n            permission_classes = [IsAdminUser]\n        else:\n            permission_classes = []\n        return [permission() for permission in permission_classes]\nclass CourseViewSet(ModelViewSet):",
+        "detail": "cours.views",
+        "documentation": {}
+    },
+    {
+        "label": "CourseViewSet",
+        "kind": 6,
+        "importPath": "cours.views",
+        "description": "cours.views",
+        "peekOfCode": "class CourseViewSet(ModelViewSet):\n    queryset = Course.objects.filter(is_public=True).order_by('date_creation')\n    def get_serializer_class(self):\n        if self.action in ['create', 'update']:\n            return CourCreateOrUpdateSerializer\n        elif self.action == 'retrieve':\n            return CourseRetrieveSerializer\n        return CourseListSerializer\n    def get_permissions(self):\n        if self.action in ['create', 'update', 'destroy']:",
+        "detail": "cours.views",
         "documentation": {}
     },
     {
@@ -2730,7 +3114,7 @@
         "kind": 2,
         "importPath": "review.models",
         "description": "review.models",
-        "peekOfCode": "def post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")\n    if instance.pdf_file:\n        os.system(f\"rm media/{instance.pdf_file}\")\n\"\"\"\n@receiver(pre_save, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")",
+        "peekOfCode": "def post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit.path}\")\n    if instance.pdf_file:\n        os.system(f\"rm media/{instance.pdf_file.path}\")\n\"\"\"\n@receiver(pre_save, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")",
         "detail": "review.models",
         "documentation": {}
     },
@@ -2748,7 +3132,7 @@
         "kind": 5,
         "importPath": "review.models",
         "description": "review.models",
-        "peekOfCode": "PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\n@receiver(post_delete, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit}\")\n    if instance.pdf_file:\n        os.system(f\"rm media/{instance.pdf_file}\")\n\"\"\"\n@receiver(pre_save, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):",
+        "peekOfCode": "PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))\n@receiver(post_delete, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):\n    if instance.file_submit:\n        res = os.system(f\"rm media/{instance.file_submit.path}\")\n    if instance.pdf_file:\n        os.system(f\"rm media/{instance.pdf_file.path}\")\n\"\"\"\n@receiver(pre_save, sender=Article)\ndef post_delete_receiver(sender, instance, **kwargs):",
         "detail": "review.models",
         "documentation": {}
     },

@@ -14,7 +14,8 @@ class TestAuthor(APITestCase):
     uri = 'author'
     def setUp(self) -> None:
         self.factory = APIRequestFactory()
-        self.user = User.objects.create_user(email='bonheur@gmail.com', password='1234', username='bonheur')
+        self.password = '1234'
+        self.user = User.objects.create_user(email='bonheur@gmail.com', password=self.password, username='bonheur')
         self.author = Author.objects.create(
             adress='102 rue de test',
             contact='068314433',
@@ -139,3 +140,16 @@ class TestAuthor(APITestCase):
         self.assertNotIsInstance(req_json, list)
 
         
+    def test_change_password(self):
+        current_password = self.password
+        new_password = '123456'
+        self.client.force_authenticate(self.user)
+        data = {
+            'old_password': current_password,
+            'new_password': new_password
+        }
+        response = self.client.patch(reverse_lazy('author'), data=data)
+        user = User.objects.get(pk=self.user.id)
+        self.assertTrue(user.check_password(new_password))
+
+
