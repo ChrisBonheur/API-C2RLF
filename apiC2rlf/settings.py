@@ -91,31 +91,30 @@ WSGI_APPLICATION = 'apiC2rlf.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#if os.environ.get('ENV') == 'PRODUCTION':
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cp2163363p23_c2rlf',   
-        'USER': 'cp2163363p23_bonheur',  
-        'PASSWORD': 'hsbil8vqcABs',
-        'HOST': 'localhost',
-        'PORT': '3306',  
-        'OPTIONS': {
-            'sql_mode': 'STRICT_ALL_TABLES',
-        }, 
+if os.environ.get('ENV') == 'PRODUCTION':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'cp2163363p23_c2rlf',   
+            'USER': 'cp2163363p23_bonheur',  
+            'PASSWORD': 'hsbil8vqcABs',
+            'HOST': 'localhost',
+            'PORT': '3306',  
+            'OPTIONS': {
+                'sql_mode': 'STRICT_ALL_TABLES',
+            }, 
+        }
     }
-}
-ISPRODUCTION = True
-"""
+    ISPRODUCTION = True
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+    ISPRODUCTION = False
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-ISPRODUCTION = False
-"""
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 

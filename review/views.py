@@ -14,6 +14,11 @@ from django.test import override_settings
 from apiC2rlf.enum import ArticleState
 from datetime import datetime
 from django.contrib.auth.models import User
+from pageContent.models import PageContent
+from ouvrage.models import Ouvrage, Category as CategoryOuvrage
+from cours.models import Course, Level
+
+from review.save import run
 
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
@@ -195,9 +200,14 @@ class ArticleViewSet(ModelViewSet):
             'article_init': Article.objects.filter(state=ArticleState.INITIALISATION.value).count(),
             'article_parution': Article.objects.filter(state=ArticleState.PARRUTION.value).count(),
             'article_publication': Article.objects.filter(state=ArticleState.PUBLICATION.value).count(),
-            'cours_pdf': 0,
-            'ouvrage': 0,
-            'authors_active': User.objects.filter(is_active=True).count()
+            'cours_pdf': Course.objects.count(),
+            'ouvrage': Ouvrage.objects.count(),
+            'authors_active': User.objects.filter(is_active=True).count(),
+            'volume': Volume.objects.count(),
+            'page': PageContent.objects.count(),
+            'type_source': TypeSource.objects.count(),
+            'categorie_ouvrage': CategoryOuvrage.objects.count(),
+            'niveau': Level.objects.count(),
         }
         
         serialializer = statisitiqueSerializer(data=data)

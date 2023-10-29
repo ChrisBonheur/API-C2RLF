@@ -5,3 +5,6 @@ media/
 */migrations/0*
 apiC2rlf/settings.py
 db.sqlite3
+MOCK_DATA2.csv
+review/MOCK_DATA.csv
+review/save.py

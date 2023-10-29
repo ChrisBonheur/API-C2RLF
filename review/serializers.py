@@ -326,3 +326,8 @@ class statisitiqueSerializer(serializers.Serializer):
     cours_pdf = serializers.IntegerField()
     authors_active = serializers.IntegerField()
     ouvrage = serializers.IntegerField()
+    volume = serializers.IntegerField()
+    page = serializers.IntegerField()
+    type_source = serializers.IntegerField()
+    categorie_ouvrage= serializers.IntegerField()
+    niveau = serializers.IntegerField()
