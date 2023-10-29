@@ -18,8 +18,6 @@ from pageContent.models import PageContent
 from ouvrage.models import Ouvrage, Category as CategoryOuvrage
 from cours.models import Course, Level
 
-from review.save import run
-
 class VolumeViewSet(ModelViewSet):
     serializer_class = VolumeSerializer
     queryset = Volume.objects.all().order_by('-volume_year')
